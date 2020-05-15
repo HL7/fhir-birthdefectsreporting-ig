@@ -5,8 +5,8 @@ Thumbs.db
 /template
 /temp
 /input
-ig.ini
-package.json
-package-list.json
+/ig.ini
+/package.json
+/package-list.json
 /build*
 SUSHI-GENERATED-FILES.md

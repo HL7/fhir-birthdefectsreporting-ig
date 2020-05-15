@@ -1,0 +1,25 @@
+{
+  "name": "hl7.fhir.us.birthdefectreporting",
+  "version": "0.1.0",
+  "canonical": "http://hl7.org/fhir/us/birthdefectreporting",
+  "url": "http://hl7.org/fhir/us/birthdefectreporting/ImplementationGuide/hl7.fhir.us.birthdefectreporting",
+  "title": "Birth Defect Reporting Implementation Guide",
+  "description": "An IG for submitting reportable birth defects to a jurisdictional program",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.us.core": "3.1.0"
+  },
+  "keywords": [
+    "Birth Defect",
+    "Public Health"
+  ],
+  "language": "en",
+  "author": "HL7 Public Health Work Group",
+  "maintainers": [
+    {
+      "name": "Craig Newman",
+      "email": "craig.newman@altarum.org"
+    }
+  ],
+  "license": "CC0-1.0"
+}
