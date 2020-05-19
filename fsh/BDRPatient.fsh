@@ -1,4 +1,5 @@
 Alias: birthPlaceExt = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
+Alias: idType = http://hl7.org/fhir/ValueSet/identifier-type
 
 
 Profile:        BDRPatient
@@ -6,9 +7,23 @@ Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
 Id:             bdr-patient
 Title:          "BDR Patient"
 Description:    "A patient for whom clinical data is included in the report. This may be the subject of birth defect report or the subject's mother if data on the pregnancy and delivery is included."
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+* identifier ^slicing.description = "Slice based on ID type"
+* identifier contains MRN 0..* MS and SSN 0..1 MS
+* identifier[MRN].type = idType#MR
+* identifier[MRN] ^short = "Medical Record Number"
+* identifier[SSN].type = idType#SB
+* identifier[SSN] ^short = "SSN if available and appropriate to send"
+* name.family 1..1
 * birthDate 1..1
 * deceased[x] MS
+* deceased[x] ^short = "Indicates if the individual is deceased or not. dateTime is preferred"
 * multipleBirth[x] MS
+* multipleBirth[x] ^short = "Whether patient is part of a multiple birth. integer is preferred"
 * extension contains birthPlaceExt named birthPlace 0..1 MS
 
 

@@ -109,6 +109,10 @@ v: {
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.66 (Jun 2019)</p><p>All codes from system <code>http://loinc.org</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-87300-0\"> </a><a href=\"http://details.loinc.org/LOINC/87300-0.html\">87300-0</a></td><td>Highest level of education Father</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-57712-2\"> </a><a href=\"http://details.loinc.org/LOINC/57712-2.html\">57712-2</a></td><td>Highest level of education Mother</td></tr></table></div>"
+  },
   "status" : "active",
   "expansion" : {
     "identifier" : "urn:uuid:26539e0c-91a1-4915-8412-4733ae4c2963",
@@ -235,6 +239,10 @@ v: {
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.66 (Jun 2019)</p><p>All codes from system <code>http://loinc.org</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-9274-2\"> </a><a href=\"http://details.loinc.org/LOINC/9274-2.html\">9274-2</a></td><td>5 minute Apgar Score</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-9271-8\"> </a><a href=\"http://details.loinc.org/LOINC/9271-8.html\">9271-8</a></td><td>10 minute Apgar Score</td></tr></table></div>"
+  },
   "status" : "active",
   "expansion" : {
     "identifier" : "urn:uuid:ac8a129d-476a-4b21-8f7c-142123ced37f",
@@ -419,6 +427,72 @@ v: {
 v: {
   "display" : "Place where birth occurred [US Standard Certificate of Live Birth]",
   "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "75609-8"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Birth defects Outpatient Registry report",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "85580-9"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Birth defects Hospital Registry report",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "75609-8",
+        "display" : "Outpatient Report"
+      },
+      {
+        "code" : "85580-9",
+        "display" : "Birthing Report"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:8653e449-8a9d-4817-87b7-f0fe4fc178ca",
+    "timestamp" : "2020-05-19T13:04:24.755Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.66"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "75609-8",
+      "display" : "Outpatient Report"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "85580-9",
+      "display" : "Birthing Report"
+    }]
+  }
+},
   "error" : ""
 }
 -------------------------------------------------------------------------------------
