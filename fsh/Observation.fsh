@@ -139,7 +139,7 @@ Description:	"Primary insurance type for the delivery."
 Profile:	BDRMotherTotalPregnancies
 Parent:		Observation
 Id:		bdr-mothertotalpregnancies
-Title:		"BDR Mother's Total Pregnancies"
+Title:		"BDR Mother Total Pregnancies"
 Description:	"The mother's total number of prior pregnancies before the current one."
 * code = LN#11996-6
 * subject only Reference(BDRPatient)
@@ -147,18 +147,6 @@ Description:	"The mother's total number of prior pregnancies before the current 
 * value[x] only integer
 * value[x] 1..1
 
-
-
-Profile:	BDRMotherPriorPreterm
-Parent:		Observation
-Id:		bdr-motherpriorpreterm
-Title:		"BDR Mother's Total Prior Preterm Births"
-Description:	"The total number of children whose birth occurred through the end of the last day of the 37th week (259th day) following onset of the last menstrual period in previous pregnancies."
-* code = LN#11637-6 
-* subject only Reference(BDRPatient)
-* subject 1..1
-* value[x] only integer
-* value[x] 1..1
 
 
 Profile:	BDRMotherLaborOnset

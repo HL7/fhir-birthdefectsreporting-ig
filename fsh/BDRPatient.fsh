@@ -3,6 +3,7 @@ Alias: idType = http://hl7.org/fhir/ValueSet/identifier-type
 
 
 Profile:        BDRPatient
+//Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
 Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
 Id:             bdr-patient
 Title:          "BDR Patient"
@@ -21,10 +22,11 @@ Description:    "A patient for whom clinical data is included in the report. Thi
 * name.family 1..1
 * birthDate 1..1
 * deceased[x] MS
-* deceased[x] ^short = "Indicates if the individual is deceased or not. dateTime is preferred"
+* deceased[x] ^short = "Indicates if the individual is deceased or not, dateTime is preferred"
 * multipleBirth[x] MS
-* multipleBirth[x] ^short = "Whether patient is part of a multiple birth. integer is preferred"
+* multipleBirth[x] ^short = "Whether patient is part of a multiple birth, integer is preferred"
 * extension contains birthPlaceExt named birthPlace 0..1 MS
+* extension[birthPlace] ^short = "Place of Birth for the patient should include the state and/or country"
 
 
 

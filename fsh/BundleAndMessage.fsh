@@ -9,14 +9,15 @@ Description:	"The bundle of birth defect report resources."
 * type = #message
 * timestamp 1..1
 * timestamp ^short = "When the report was assembled"
-* entry ^slicing.discriminator.type = #pattern
-* entry ^slicing.discriminator.path = "resource"
-* entry ^slicing.rules = #open
-* entry ^slicing.ordered = true
-* entry ^slicing.description = "First entry must be MessageHeader"
-* entry contains MessageHeader 1..1
-* entry[MessageHeader].resource 1..1
-* entry[MessageHeader].resource ^type.profile = http://hl7.org/fhir/us/birthdefectreporting/StructureDefinition/bdr-messageheader
+//* entry ^slicing.discriminator.type = #type
+//* entry ^slicing.discriminator.path = "resource"
+//* entry ^slicing.rules = #open
+//* entry ^slicing.ordered = true
+//* entry ^slicing.description = "First entry must be MessageHeader"
+//* entry contains MessageHeader 1..1
+//* entry[MessageHeader].resource 1..1
+//* entry[MessageHeader].resource only BDRMessageHeader
+
 
 Profile:	BDRMessageHeader
 Parent:		MessageHeader

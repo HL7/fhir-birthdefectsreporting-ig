@@ -93,7 +93,7 @@ Description:	"The delivery attendant's final estimate of gestation based on all 
 Profile:	MotherHeight
 Parent:		Observation
 Id:		motherheight
-Title:		"Mother's Height "
+Title:		"Mother Height "
 Description:	"The height of the mother."
 //could also use LOINC 83846-6
 * code = LN#3137-7
@@ -106,7 +106,7 @@ Description:	"The height of the mother."
 Profile:	MotherDeliveryWeight
 Parent:		Observation
 Id:		motherdeliveryweight
-Title:		"Mother's Delivery Weight "
+Title:		"Mother Delivery Weight "
 Description:	"The weight of the mother at the time of birth."
 * code = LN#69461-2
 * subject only Reference(BDRPatient)
@@ -118,7 +118,7 @@ Description:	"The weight of the mother at the time of birth."
 Profile:	MotherPrePregnancyWeight
 Parent:		Observation
 Id:		motherprepgrenancyweight
-Title:		"Mother's Pre-Pregnancy Weight "
+Title:		"Mother Pre-Pregnancy Weight "
 Description:	"The weight of the mother before becoming pregnant."
 * code = LN#56077-1
 * subject only Reference(BDRPatient)
@@ -130,7 +130,7 @@ Description:	"The weight of the mother before becoming pregnant."
 Profile:	MotherRiskFactor
 Parent:		Observation
 Id:		motherriskfactor
-Title:		"Mother's Risk Factor"
+Title:		"Mother Risk Factor"
 Description:	"Information on a risk factors for the mother during pregnancy"
 * code = LN#73775-9
 * subject only Reference(BDRPatient)
@@ -143,7 +143,7 @@ Description:	"Information on a risk factors for the mother during pregnancy"
 Profile:	MotherLMP
 Parent:		Observation
 Id:		motherlmp
-Title:		"Mother's Last Menstrual Period"
+Title:		"Mother Last Menstrual Period"
 Description:	"This profile represents the date of the last menstrual period of the patient. If known, the first day of last menstrual period should be captured."
 * code = LN#8665-2
 * subject only Reference(BDRPatient)
@@ -155,7 +155,7 @@ Description:	"This profile represents the date of the last menstrual period of t
 Profile:	MotherBirthsNowDead
 Parent:		Observation
 Id:		motherbirthsnowdead
-Title:		"Number of Mother's Births Now Dead"
+Title:		"Number of Mother Births Now Dead"
 Description:	"The total number of previous live-born infants for the mother now dead."
 * code = LN#68496-9
 * subject only Reference(BDRPatient)
@@ -166,7 +166,7 @@ Description:	"The total number of previous live-born infants for the mother now 
 Profile:	MotherBirthsNowLiving
 Parent:		Observation
 Id:		motherbirthsnowliving
-Title:		"Number of Mother's Births Now Living"
+Title:		"Number of Mother Births Now Living"
 Description:	"The total number of previous live-born infants for the mother now living."
 * code = LN#11638-4
 * subject only Reference(BDRPatient)
@@ -177,7 +177,7 @@ Description:	"The total number of previous live-born infants for the mother now 
 Profile:	MotherOtherOutcomes
 Parent:		Observation
 Id:		motherotheroutcomes
-Title:		"Number of Mother's Other Outcomes"
+Title:		"Number of Mother Other Outcomes"
 Description:	"The total number of other pregnancy outcomes for the mother that did not result in a live birth."
 * code = LN#69043-8
 * subject only Reference(BDRPatient)
@@ -188,7 +188,7 @@ Description:	"The total number of other pregnancy outcomes for the mother that d
 Profile:	MotherPrenatalVisits
 Parent:		Observation
 Id:		motherprenatalvisits
-Title:		"Number of Mother's Prenatal Visits"
+Title:		"Prenatal Care"
 Description:	"The total number of prenatal visits for the mother. The dates of the first and last prenatal visit are indicated by the effective date range. If the mother received no prenatal care, the value should indicate 0 visits."
 * code = LN#68493-6
 * subject only Reference(BDRPatient)
@@ -199,9 +199,9 @@ Description:	"The total number of prenatal visits for the mother. The dates of t
 
 Profile:	MotherCesareans
 Parent:		Observation
-Id:		mothercesareans
-Title:		"Number of Mother's Previous Cesareans"
-Description:	"The total number of previous cesarean deliveries for the mother."
+Id:			mothercesareans
+Title:		"Prior Cesareans"
+Description:	"The total number of prior cesarean deliveries for the mother."
 * code = LN#68497-7
 * subject only Reference(BDRPatient)
 * subject 1..1
@@ -210,7 +210,7 @@ Description:	"The total number of previous cesarean deliveries for the mother."
 
 Profile:	MotherPlurality
 Parent:		Observation
-Id:		motherplurality
+Id:			motherplurality
 Title:		"Plurality"
 Description:	"The number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy. Include all live births and fetal losses resulting from this pregnancy."
 * code = LN#57722-1 
@@ -219,8 +219,30 @@ Description:	"The number of fetuses delivered live or dead at any time in the pr
 * value[x] only integer
 
 
+Profile:	MotherLiveBirths
+Parent:		Observation
+Id:			motherlivebirths
+Title:		"Live Births This Delivery"
+Description:	"The number of live births in this delivery."
+* code = LN#73773-4 
+* subject only Reference(BDRPatient)
+* subject 1..1
+* value[x] only integer
+
+
+Profile:	MotherFetalDeaths
+Parent:		Observation
+Id:			motherfetaldeaths
+Title:		"Fetal Deaths This Delivery"
+Description:	"The number of fetal deaths in this delivery."
+* code = LN#73773-4 
+* subject only Reference(BDRPatient)
+* subject 1..1
+* value[x] only integer
+
+
 ValueSet:	EducationLevelPerson
-Id:		educationlevelperson
+Id:			educationlevelperson
 Title:		"Person Education Level"
 Description:	"A set of persons for whom education level can be reported."
 * LN#87300-0 "Highest level of education Father"
@@ -229,7 +251,7 @@ Description:	"A set of persons for whom education level can be reported."
 
 
 ValueSet:	ApgarTiming
-Id:		apgartiming
+Id:			apgartiming
 Title:		"APGAR Score Timing"
 Description:	"Standard timings for APGAR assessments."
 * LN#9274-2 "5 minute Apgar Score"

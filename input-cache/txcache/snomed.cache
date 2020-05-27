@@ -9,3 +9,57 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "312948004"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Karyotype determination",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "444309000"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Determination of karyotype from blood specimen (procedure)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "434701000124101"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "unable to find code 434701000124101 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309)"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "312948004",
+        "display" : "Karyotype determination (procedure)"
+      },
+      {
+        "code" : "444309000",
+        "display" : "Determination of karyotype from blood specimen (procedure)"
+      },
+      {
+        "code" : "434701000124101",
+        "display" : "Surfactant replacement therapy "
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: unable to find code 434701000124101 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309)"
+}
+-------------------------------------------------------------------------------------
