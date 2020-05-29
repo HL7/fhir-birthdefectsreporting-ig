@@ -27,10 +27,9 @@ Description:    "A description of a reportable birth defect diagnosis for the re
 
 
 Profile:        BDRConfirmatoryTest
-Parent:         Procedure
+Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure
 Id:             bdr-confirmatorytest
 Title:          "BDR Diagnosis Confirmatory Test"
 Description:    "A procedure used to confirm the reportable birth defect diagnosis for the report subject"
 * subject only Reference(BDRPatient)
 * code from testList (extensible)
-* performed[x] 1..1

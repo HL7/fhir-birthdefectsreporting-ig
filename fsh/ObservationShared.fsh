@@ -68,7 +68,7 @@ Description:	"Indication of whether the infant is living at the time the report 
 Profile:	BirthWeight
 Parent:		Observation
 Id:		birthweight
-Title:		"Birth Weight "
+Title:		"Birth Weight"
 Description:	"The weight of the subject at the time of birth."
 * code = LN#8339-4
 * subject only Reference(BDRPatient)
@@ -93,7 +93,7 @@ Description:	"The delivery attendant's final estimate of gestation based on all 
 Profile:	MotherHeight
 Parent:		Observation
 Id:		motherheight
-Title:		"Mother Height "
+Title:		"Mother Height"
 Description:	"The height of the mother."
 //could also use LOINC 83846-6
 * code = LN#3137-7
@@ -106,7 +106,7 @@ Description:	"The height of the mother."
 Profile:	MotherDeliveryWeight
 Parent:		Observation
 Id:		motherdeliveryweight
-Title:		"Mother Delivery Weight "
+Title:		"Mother Delivery Weight"
 Description:	"The weight of the mother at the time of birth."
 * code = LN#69461-2
 * subject only Reference(BDRPatient)
@@ -118,7 +118,7 @@ Description:	"The weight of the mother at the time of birth."
 Profile:	MotherPrePregnancyWeight
 Parent:		Observation
 Id:		motherprepgrenancyweight
-Title:		"Mother Pre-Pregnancy Weight "
+Title:		"Mother Pre-Pregnancy Weight"
 Description:	"The weight of the mother before becoming pregnant."
 * code = LN#56077-1
 * subject only Reference(BDRPatient)

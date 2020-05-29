@@ -11,11 +11,11 @@ The scope of this document is centered on the reporting of a birth defect diagno
 * Delivery related data - including outcomes, observations, medications and procedures
 * Other relevant clinical data about report subject
 
-![Birth Defect Report Data Content](./BDRcorecontent.png)
+![Birth Defect Report Data Content](BDRcorecontent.png)
 
 Individual data elements are mapped to specific resource profiles. TBD - add expectations about supporting these data elements and profiles.
 
-![Birth Defect Report Data Content Mapping](./profilemappings.png)
+![Birth Defect Report Data Content Mapping](profilemappings.png)
 
 # Patient Scope
 In many jurisdictions, the scope of birth defect reporting focuses on subject under the age of 24 months. Jurisdictional requirements may extend the scope to include older subjects (e.g. those under 12 years of age) if the birth defect is not diagnoses at an earlier age. Typically however, reporting  does not extend to adult subjects. Reporting requirements typically include both living and deceased subjects and may include stillborn subjects, miscarriages and elective terminations as determined by jurisdictional scope.

@@ -80,7 +80,7 @@ Description:	"The height (body length) of the subject at the time of birth."
 
 Profile:	BDRMotherAlcoholUse
 Parent:		Observation
-Id:		bdr-motheralcoholuse
+Id:			bdr-motheralcoholuse
 Title:		"BDR Mother Alcohol Use"
 Description:	"Observation regarding the mother's use of alcohol during the pregnancy."
 * code = SCT#160573003
@@ -94,7 +94,7 @@ Description:	"Observation regarding the mother's use of alcohol during the pregn
 
 Profile:	BDRMotherDrugUse
 Parent:		Observation
-Id:		bdr-motherldruguse
+Id:			bdr-motherldruguse
 Title:		"BDR Mother Drug Use"
 Description:	"Observation regarding maternal recreational drug use during pregnancy."
 * code = LN#89495-6
@@ -104,12 +104,12 @@ Description:	"Observation regarding maternal recreational drug use during pregna
 * focus 1..1
 * value[x] only CodeableConcept
 * value[x] 1..1
-//* value[x] from TBD (extensible)
+* value[x] from https://phinvads.cdc.gov/vads/ViewValueSet.action?id=07AE5520-13E9-4249-8F3C-23C8E14D6298 (extensible)
 
 
 Profile:	BDRMotherExposure
 Parent:		Observation
-Id:		bdr-motherexposure
+Id:			bdr-motherexposure
 Title:		"BDR Mother Exposure"
 Description:	"Exposure of the mother to potentially harmful chemical, physical, or biological agents in the environment or to environmental factors that may include ionizing radiation, pathogenic organisms, or toxic chemicals that may cause fetal morbidity."
 * code = LN#89496-4
