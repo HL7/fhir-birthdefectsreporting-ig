@@ -4,6 +4,9 @@ Regional, state and territorial public health population-based birth defect regi
 
 ### Goals
 This Implementation Guide contains the necessary specifications, profiles and value sets for the implementation of standardized data transmissions using the HL7 FHIR standard. A standardized method will allow more efficient and accurate transmission of birth defects information while reducing the burden on providers, implementers/developers and public health programs.
-This specification aims to harmonize with other HL7 products including FHIR US Core profiles, the Vital Records Domain Analysis Model and the existing CDA Birth Defect Reporting implementation guide as well as content produced by other organizations such as the National Birth Defect Prevention Network Surveillance Guidelines. The authors of this implementation guide would like to acknowledge the work effort put forward by project teams for these other standards without which this specification would not be possible. In particular, many thanks to the many birth defect registry programs who contributed time and expertise to identify the data elements critical to report.
+This specification aims to harmonize with other HL7 products including FHIR US Core profiles, the Vital Records Domain Analysis Model and the existing CDA Birth Defect Reporting implementation guide as well as content produced by other organizations such as the Surveillance Guidelines from the National Birth Defect Prevention Network. 
+
+### Acknowledegments
+The authors of this implementation guide would like to acknowledge the work effort put forward by project teams for the standards mentioned above without which this specification would not be possible. In particular, many thanks to the many birth defect registry programs who contributed time and expertise to identify the data elements critical to report.
 
 
