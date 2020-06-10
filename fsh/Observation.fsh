@@ -88,7 +88,7 @@ Profile:		BDRMotherAlcoholUse
 Parent:			Observation
 Id:				bdr-motheralcoholuse
 Title:			"Observation - Mother Alcohol Use (BDR)"
-Description:	"Observation regarding the mother's use of alcohol during the pregnancy."
+Description:	"An observation regarding the mother's use of alcohol during the pregnancy."
 * code = SCT#160573003
 * subject only Reference(BDRPatient)
 * subject 1..1
@@ -103,7 +103,7 @@ Profile:		BDRMotherDrugUse
 Parent:			Observation
 Id:				bdr-motherldruguse
 Title:			"Observation - Mother Drug Use (BDR)"
-Description:	"Observation regarding maternal recreational drug use during pregnancy."
+Description:	"An observation regarding maternal recreational drug use during pregnancy."
 * code = LN#89495-6
 * subject only Reference(BDRPatient)
 * subject 1..1
@@ -119,7 +119,7 @@ Profile:		BDRMotherExposure
 Parent:			Observation
 Id:				bdr-motherexposure
 Title:			"Observation - Mother Exposure (BDR)"
-Description:	"Exposure of the mother to potentially harmful chemical, physical, or biological agents in the environment or to environmental factors that may include ionizing radiation, pathogenic organisms, or toxic chemicals that may cause fetal morbidity."
+Description:	"The exposure of the mother to potentially harmful chemical, physical, or biological agents in the environment or to environmental factors that may include ionizing radiation, pathogenic organisms, or toxic chemicals that may cause fetal morbidity."
 * code = LN#89496-4
 * subject only Reference(BDRPatient)
 * subject 1..1
@@ -135,7 +135,7 @@ Profile:		BDRMotherInsurance
 Parent:			Observation
 Id:				bdr-motherinsurance
 Title:			"Observation - Mother Primary Insurance (BDR)"
-Description:	"Primary insurance type for the delivery."
+Description:	"The primary insurance type for the delivery."
 * code = LN#76437-3
 * subject only Reference(BDRPatient)
 * subject 1..1
@@ -178,7 +178,7 @@ Profile:		BDRMotherPreviousPretermBirths
 Parent:			Observation
 Id:				bdr-motherpreviouspretermbirths
 Title:			"Observation - Mother Previous Preterm Births (BDR)"
-Description:	"For the mother, the total number of children whose birth occurred through the end of the last day of the 37th week (259th day) following onset of the last menstrual period in previous pregnancies."
+Description:	"The total number of children for the mother whose birth occurred through the end of the last day of the 37th week (259th day) following onset of the last menstrual period in previous pregnancies."
 * code = LN#11637-6
 * subject only Reference(BDRPatient)
 * subject 1..1

@@ -48,7 +48,7 @@ Profile:		BDRRelatedPersonResponsibleParty
 Parent:			RelatedPerson
 Id:				bdr-relatedpersonresponsibleparty
 Title:			"Responsible Party (BDR)"
-Description:	"A individual responsible for the birth defect subject. Mother and father are captured separately."
+Description:	"An individual responsible for the birth defect subject. Mother and father are captured separately."
 * relationship 1..* MS 
 * name 1..* MS
 * telecom MS
@@ -60,7 +60,7 @@ Description:	"A individual responsible for the birth defect subject. Mother and 
 Extension:		RelatedPersonDeceased
 Id:				bdr-relatedpersondeceased
 Title:			"Deceased (BDR)"
-Description:	"Deceased indicator for a RelatedPerson. Decease date/time is preferred."
+Description:	"The deceased indicator for a RelatedPerson. Decease date/time is preferred."
 * value[x] only boolean or dateTime 
 * value[x] 1..1
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
@@ -70,7 +70,7 @@ Description:	"Deceased indicator for a RelatedPerson. Decease date/time is prefe
 Extension:		RelatedPersonBirthPlace
 Id:				bdr-relatedpersonbirthplace
 Title:			"Birth Place (BDR)"
-Description:	"The registered place of birth of the related person.A sytem may use the address.text if they don't store the birthPlace address in discrete elements."
+Description:	"The registered place of birth for the related person.A sytem may use the address.text if they don't store the birthPlace address in discrete elements."
 * value[x] only Address 
 * value[x] 1..1
 * valueAddress ^short = "The registered place of birth of the related person."
@@ -92,7 +92,7 @@ Description:	"One more races for the related person."
 Extension:		RelatedPersonEthnicity
 Id:				bdr-relatedpersonethnicity
 Title:			"Ethnicity (BDR)"
-Description:	"Ethnicity for the related person."
+Description:	"The ethnicity for the related person."
 * value[x] only CodeableConcept 
 * value[x] 0..1
 * valueCodeableConcept from http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category (required)

@@ -34,7 +34,7 @@ Profile:		BDRPerson
 Parent:			Person
 Id:				bdr-person
 Title:			"Person (BDR)"
-Description:	"Person resource used to link the mother's Patient record with the mother's RelatedPerson record. This is important because a Patient should only be created for individual who experienced labor and delivery, but multiple different mother roles may exist."
+Description:	"A Person resource used to link the mother's Patient record with the mother's RelatedPerson record. This is important because a Patient should only be created for individual who experienced labor and delivery, but multiple different mother roles may exist."
 * link ^slicing.discriminator.type = #pattern
 * link ^slicing.discriminator.path = "target"
 * link ^slicing.rules = #open

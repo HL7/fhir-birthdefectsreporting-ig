@@ -752,3 +752,127 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "9272-6"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "1 minute Apgar Score",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "9272-6",
+        "display" : "1 minute Apgar Score"
+      },
+      {
+        "code" : "9274-2",
+        "display" : "5 minute Apgar Score"
+      },
+      {
+        "code" : "9271-8",
+        "display" : "10 minute Apgar Score"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:f610f4bd-4d0d-4637-b205-b567f0d0777e",
+    "timestamp" : "2020-06-10T18:40:46.269Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.66"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "9272-6",
+      "display" : "1 minute Apgar Score"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "9274-2",
+      "display" : "5 minute Apgar Score"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "9271-8",
+      "display" : "10 minute Apgar Score"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "9272-6",
+        "display" : "1 minute Apgar Score"
+      },
+      {
+        "code" : "9274-2",
+        "display" : "5 minute Apgar Score"
+      },
+      {
+        "code" : "9271-8",
+        "display" : "10 minute Apgar Score"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:0261fec9-8ff6-4212-829d-14aa1239084e",
+    "timestamp" : "2020-06-10T18:42:32.222Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.66"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "9272-6",
+      "display" : "1 minute Apgar Score"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "9274-2",
+      "display" : "5 minute Apgar Score"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "9271-8",
+      "display" : "10 minute Apgar Score"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

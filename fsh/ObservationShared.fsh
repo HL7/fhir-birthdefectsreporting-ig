@@ -6,7 +6,7 @@ Profile:		ParentEducationLevel
 Parent:			Observation
 Id:				parenteducationlevel
 Title:			"Observation - Parent Education Level"
-Description:	"Education Level of the birth defect report subject's parent."
+Description:	"The education Level of the birth defect report subject's parent."
 * code from EducationLevelPerson (required)
 * subject only Reference(BDRPatient)
 * subject 1..1
@@ -33,7 +33,7 @@ Profile:		PlaceOfBirth
 Parent:			Observation
 Id:				placeofbirth
 Title:			"Observation - Place Of Birth"
-Description:	"Indicates the type of place or situation where birth or delivery occurred"
+Description:	"An indication of the type of place or situation where birth or delivery occurred"
 * code = LN#73766-8 
 * subject only Reference(BDRPatient)
 * subject 1..1
@@ -47,7 +47,7 @@ Profile:		AutopsyPerformed
 Parent:			Observation
 Id:				autopsyperformed
 Title:			"Observation - Autopsy Performed"
-Description:	"Indication if an autopsy has been performed on the subject."
+Description:	"An indication if an autopsy has been performed on the subject."
 * code = LN#73768-4
 * subject only Reference(BDRPatient)
 * subject 1..1
@@ -61,7 +61,7 @@ Profile:		InfantLiving
 Parent:			Observation
 Id:				infantliving
 Title:			"Observation - Infant Living"
-Description:	"Indication of whether the infant is living at the time the report is being submitted."
+Description:	"An indication of whether the infant is living at the time the report is being submitted."
 * code = LN#73757-7
 * subject only Reference(BDRPatient)
 * subject 1..1
@@ -156,7 +156,7 @@ Profile:		MotherLMP
 Parent:			Observation
 Id:				motherlmp
 Title:			"Observation - Mother Last Menstrual Period"
-Description:	"This profile represents the date of the last menstrual period of the patient. If known, the first day of last menstrual period should be captured."
+Description:	"The last menstrual period of the patient. If known, the first day of last menstrual period should be captured."
 * code = LN#8665-2
 * subject only Reference(BDRPatient)
 * subject 1..1
@@ -253,8 +253,8 @@ Description:	"The number of live births in this delivery."
 Profile:		MotherFetalDeaths
 Parent:			Observation
 Id:				motherfetaldeaths
-Title:			"Fetal Deaths This Delivery"
-Description:	"Observation - The number of fetal deaths in this delivery."
+Title:			"Observation - Fetal Deaths This Delivery"
+Description:	"The number of fetal deaths in this delivery."
 * code = LN#73773-4 
 * subject only Reference(BDRPatient)
 * subject 1..1
@@ -265,7 +265,7 @@ Description:	"Observation - The number of fetal deaths in this delivery."
 ValueSet:		EducationLevelPerson
 Id:				educationlevelperson
 Title:			"Person Education Level"
-Description:	"A set of persons for whom education level can be reported."
+Description:	"Persons for whom education level can be reported."
 * LN#87300-0 "Highest level of education Father"
 * LN#57712-2 "Highest level of education Mother"
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
@@ -276,6 +276,7 @@ ValueSet:		ApgarTiming
 Id:				apgartiming
 Title:			"APGAR Score Timing"
 Description:	"Standard timings for APGAR assessments."
+* LN#9272-6 "1 minute Apgar Score"
 * LN#9274-2 "5 minute Apgar Score"
 * LN#9271-8 "10 minute Apgar Score"
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
