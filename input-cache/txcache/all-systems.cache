@@ -68,3 +68,44 @@ e: {
   "error" : "Error from server: unable to find code 434701000124101 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309)"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "312948004",
+        "display" : "Karyotype determination (procedure)"
+      },
+      {
+        "code" : "444309000",
+        "display" : "Determination of karyotype from blood specimen (procedure)"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct/731000124108",
+      "concept" : [{
+        "code" : "434701000124101",
+        "display" : "Surfactant replacement therapy"
+      }]
+    },
+    {
+      "system" : "https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3DBDA20B-9C63-E411-A174-0017A477041A",
+      "concept" : [{
+        "code" : "PHC1250",
+        "display" : "Assisted ventilation required immediately following delivery"
+      }]
+    },
+    {
+      "system" : "https://phinvads.cdc.gov/vads/ViewValueSet.action?id=5D073DA7-9C63-E411-A174-0017A477041A",
+      "concept" : [{
+        "code" : "PHC1251",
+        "display" : "Assisted ventilation required for more than six hours"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://snomed.info/sct/731000124108"
+}
+-------------------------------------------------------------------------------------

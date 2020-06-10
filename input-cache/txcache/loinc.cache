@@ -566,3 +566,189 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "85353-1"
+      },
+      {
+        "code" : "9279-1"
+      },
+      {
+        "code" : "8867-4"
+      },
+      {
+        "code" : "2708-6"
+      },
+      {
+        "code" : "8310-5"
+      },
+      {
+        "code" : "8302-2"
+      },
+      {
+        "code" : "9843-4"
+      },
+      {
+        "code" : "29463-7"
+      },
+      {
+        "code" : "39156-5"
+      },
+      {
+        "code" : "85354-9"
+      },
+      {
+        "code" : "8480-6"
+      },
+      {
+        "code" : "8462-4"
+      },
+      {
+        "code" : "8478-0"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:b1b60411-0a31-4ec3-a163-daf399fa0564",
+    "timestamp" : "2020-06-10T12:05:00.412Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.66"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "85353-1",
+      "display" : "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "9279-1",
+      "display" : "Respiratory rate"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "8867-4",
+      "display" : "Heart rate"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "2708-6",
+      "display" : "Oxygen saturation in Arterial blood"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "8310-5",
+      "display" : "Body temperature"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "8302-2",
+      "display" : "Body height"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "9843-4",
+      "display" : "Head Occipital-frontal circumference"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "29463-7",
+      "display" : "Body weight"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "39156-5",
+      "display" : "Body mass index (BMI) [Ratio]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "85354-9",
+      "display" : "Blood pressure panel with all children optional"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "8480-6",
+      "display" : "Systolic blood pressure"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "8462-4",
+      "display" : "Diastolic blood pressure"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "8478-0",
+      "display" : "Mean blood pressure"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "9274-2",
+        "display" : "5 minute Apgar Score"
+      },
+      {
+        "code" : "9271-8",
+        "display" : "10 minute Apgar Score"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:49661101-26f3-414f-b24b-bfce70bb7f8f",
+    "timestamp" : "2020-06-10T12:05:00.631Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.66"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "9274-2",
+      "display" : "5 minute Apgar Score"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "9271-8",
+      "display" : "10 minute Apgar Score"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

@@ -63,3 +63,49 @@ e: {
   "error" : "Error from server: unable to find code 434701000124101 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309)"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "312948004",
+        "display" : "Karyotype determination (procedure)"
+      },
+      {
+        "code" : "444309000",
+        "display" : "Determination of karyotype from blood specimen (procedure)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:2c62b0fa-97a9-4125-a007-149a58691410",
+    "timestamp" : "2020-06-03T18:07:26.942Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200309"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "312948004",
+      "display" : "Karyotype determination (procedure)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "444309000",
+      "display" : "Determination of karyotype from blood specimen (procedure)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

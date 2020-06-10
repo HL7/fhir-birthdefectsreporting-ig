@@ -1,12 +1,11 @@
-Alias: birthPlaceExt = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
-Alias: idType = http://hl7.org/fhir/ValueSet/identifier-type
+Alias: 			birthPlaceExt = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
+Alias: 			idType = http://terminology.hl7.org/CodeSystem/v2-0203
 
 
 Profile:        BDRPatient
-//Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
 Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
 Id:             bdr-patient
-Title:          "BDR Patient"
+Title:          "Patient (BDR)"
 Description:    "A patient for whom clinical data is included in the report. This may be the subject of birth defect report or the subject's mother if data on the pregnancy and delivery is included."
 * identifier 1..*
 * identifier ^slicing.discriminator.type = #pattern
@@ -27,13 +26,14 @@ Description:    "A patient for whom clinical data is included in the report. Thi
 * multipleBirth[x] ^short = "Whether patient is part of a multiple birth, integer is preferred"
 * extension contains birthPlaceExt named birthPlace 0..1 MS
 * extension[birthPlace] ^short = "Place of Birth for the patient should include the state and/or country"
+* ^jurisdiction.coding = COUNTRY#US "United States of America"
 
 
 
-Profile:	BDRPerson
-Parent:		Person
-Id:		bdr-person
-Title:		"BDR Person"
+Profile:		BDRPerson
+Parent:			Person
+Id:				bdr-person
+Title:			"Person (BDR)"
 Description:	"Person resource used to link the mother's Patient record with the mother's RelatedPerson record. This is important because a Patient should only be created for individual who experienced labor and delivery, but multiple different mother roles may exist."
 * link ^slicing.discriminator.type = #pattern
 * link ^slicing.discriminator.path = "target"
@@ -43,3 +43,4 @@ Description:	"Person resource used to link the mother's Patient record with the 
 * link contains Patient 1..1 MS and RelatedPerson 1..1 MS
 * link[Patient].target only Reference(BDRPatient)
 * link[RelatedPerson].target only Reference(BDRRelatedPersonMother)
+* ^jurisdiction.coding = COUNTRY#US "United States of America"
