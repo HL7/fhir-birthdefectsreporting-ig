@@ -10,6 +10,10 @@ Description:	"The education Level of the birth defect report subject's parent."
 * code from EducationLevelPerson (required)
 * subject only Reference(BDRPatient)
 * subject 1..1
+* subject ^short = "This is the subject of the report, not the parent"
+* focus only Reference(BDRRelatedPersonMother | BDRRelatedPersonFather)
+* focus 1..1
+* focus ^short = "The RelatedPerson record for the parent"
 * value[x] only CodeableConcept
 * value[x] 1..1
 * value[x] from http://terminology.hl7.org/ValueSet/v3-EducationLevel (required)
@@ -146,6 +150,8 @@ Description:	"Information on a risk factors for the mother during pregnancy"
 * code = LN#73775-9
 * subject only Reference(BDRPatient)
 * subject 1..1
+* focus only Reference(BDRRelatedPersonMother)
+* focus 1..1
 * value[x] only CodeableConcept
 * value[x] 1..1
 * value[x] from https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7126 (extensible)
