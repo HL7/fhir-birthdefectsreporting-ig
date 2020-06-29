@@ -1,5 +1,6 @@
 Alias: 			birthPlaceExt = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: 			idType = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias:			linkType = http:hl7.org/fhir/link-type
 
 
 Profile:        BDRPatientSubject
@@ -51,6 +52,16 @@ Description:    "The subject's birth mom acting as a patient for whom pregnancy 
 * birthDate 1..1
 * deceased[x] MS
 * deceased[x] ^short = "Indicates if the individual is deceased or not, dateTime is preferred"
+* link MS
+* link ^slicing.discriminator.type = #pattern
+* link ^slicing.discriminator.path = "type"
+* link ^slicing.rules = #open
+* link ^slicing.ordered = false
+* link ^slicing.description = "Slice based on link type"
+* link contains mother 0..1 MS
+* link[mother].type = linkType#seealso
+* link[mother] ^short = "Link to the birth mother's RelatedPerson record"
+* link[mother].other only Reference(BDRRelatedPersonMother) 
 * extension contains birthPlaceExt named birthPlace 0..1 MS
 * extension[birthPlace] ^short = "Place of Birth for the patient should include the state and/or country"
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
