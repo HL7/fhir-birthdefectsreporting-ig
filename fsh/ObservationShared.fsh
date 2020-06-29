@@ -1,4 +1,4 @@
-//Observations shared with Birth and Fetal Death
+//Observations shared with Birth and Fetal Death Reporting
 Alias:			LN = http://loinc.org
 Alias:			COUNTRY = urn:iso:std:iso:3166
 
