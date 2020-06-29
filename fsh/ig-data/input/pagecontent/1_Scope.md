@@ -6,9 +6,9 @@ The scope of this document is centered on the reporting of a birth defect diagno
 * Patient demographics and administrative information
 * Responsible party information (particularly about the mother and father of the subject)
 * Submitting provider/organization information
-* Birth defect diagnosis data
+* Birth defect diagnosis data (including conditions and problems related to the birth defect)
 * Pregnancy related data
-* Delivery related data (including outcomes, observations and procedures)
+* Delivery related data (including outcomes, observations and procedures related to the birth defect)
 * Other relevant clinical data about report subject
 
 ![Birth Defect Report Data Content](BDRcorecontent.png)

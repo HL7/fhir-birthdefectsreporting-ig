@@ -10,7 +10,7 @@ Title:          "Reportable Diagnosis (BDR)"
 Description:    "A description of a reportable birth defect diagnosis for the report subject"
 * clinicalStatus 1..1
 * verificationStatus 1..1
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientSubject)
 * code from codeList (preferred)
 * onset[x] 1..1
 * onset[x] only dateTime
@@ -32,6 +32,6 @@ Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedur
 Id:             bdr-confirmatorytest
 Title:          "Diagnosis Confirmatory Test (BDR)"
 Description:    "A procedure used to confirm the reportable birth defect diagnosis for the report subject"
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientSubject)
 * code from testList (extensible)
 * ^jurisdiction.coding = COUNTRY#US "United States of America"

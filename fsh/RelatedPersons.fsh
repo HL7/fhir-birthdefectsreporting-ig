@@ -10,7 +10,7 @@ Id:             bdr-relatedperson
 Title:          "Related Person (BDR)"
 Description:    "The RelatedPerson profile contains constraints common to the Mother and Father profiles."
 * identifier MS
-* patient only Reference(BDRPatient)
+* patient only Reference(BDRPatientSubject)
 * relationship 1..* MS
 * name 1..* MS
 * birthDate MS

@@ -7,7 +7,7 @@ Id:				bdr-causeofdeath
 Title:			"Observation - Cause of Death (BDR)"
 Description:	"The cause of death of the birth defect report subject."
 * code = LN#79378-6
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientSubject)
 * subject 1..1
 * value[x] only CodeableConcept
 * value[x] 1..1
@@ -22,7 +22,7 @@ Id:				bdr-locationofdeath
 Title:			"Observation - Location of Death (BDR)"
 Description:	"The location of death of the birth defect report subject."
 * code = LN#58332-8
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientSubject)
 * subject 1..1
 * value[x] only string
 * value[x] 1..1
@@ -36,7 +36,7 @@ Id:				bdr-pregnancyoutcome
 Title:			"Observation - Pregnancy Outcome"
 Description:	"The result of the subject's delivery, such as live birth or not a live birth."
 * code = LN#64710-7
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientSubject)
 * subject 1..1
 * value[x] only CodeableConcept
 * value[x] 1..1
@@ -51,7 +51,7 @@ Id:				bdr-admissiontonicu
 Title:			"Observation - Admission to NICU (BDR)"
 Description:	"An observation to represent the admission of a newborn to neonatal intensive care unit."
 * code = LN#79378-6
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientSubject)
 * subject 1..1
 * value[x] only boolean
 * value[x] 1..1
@@ -64,7 +64,7 @@ Id:				bdr-birthheadcircumgerence
 Title:			"Observation - Birth Head Circumference (BDR)"
 Description:	"The head circumference of the subject at the time of birth."
 * code = LN#8290-9
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientSubject)
 * subject 1..1
 * value[x] only Quantity
 * value[x] 1..1
@@ -77,7 +77,7 @@ Id:				bdr-birthheight
 Title:			"Observation - Birth Height (BDR)"
 Description:	"The height (body length) of the subject at the time of birth."
 * code = LN#8305-5
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientSubject)
 * subject 1..1
 * value[x] only Quantity
 * value[x] 1..1
@@ -90,7 +90,7 @@ Id:				bdr-motheralcoholuse
 Title:			"Observation - Mother Alcohol Use (BDR)"
 Description:	"An observation regarding the mother's use of alcohol during the pregnancy."
 * code = SCT#160573003
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientSubject)
 * subject 1..1
 * focus only Reference(BDRRelatedPersonMother)
 * focus 1..1
@@ -105,7 +105,7 @@ Id:				bdr-motherldruguse
 Title:			"Observation - Mother Drug Use (BDR)"
 Description:	"An observation regarding maternal recreational drug use during pregnancy."
 * code = LN#89495-6
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientSubject)
 * subject 1..1
 * focus only Reference(BDRRelatedPersonMother)
 * focus 1..1
@@ -121,7 +121,7 @@ Id:				bdr-motherexposure
 Title:			"Observation - Mother Exposure (BDR)"
 Description:	"The exposure of the mother to potentially harmful chemical, physical, or biological agents in the environment or to environmental factors that may include ionizing radiation, pathogenic organisms, or toxic chemicals that may cause fetal morbidity."
 * code = LN#89496-4
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientSubject)
 * subject 1..1
 * focus only Reference(BDRRelatedPersonMother)
 * focus 1..1
@@ -137,7 +137,7 @@ Id:				bdr-motherinsurance
 Title:			"Observation - Mother Primary Insurance (BDR)"
 Description:	"The primary insurance type for the delivery."
 * code = LN#76437-3
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientMother)
 * subject 1..1
 * value[x] only CodeableConcept
 * value[x] 1..1
@@ -152,26 +152,12 @@ Id:				bdr-mothertotalpregnancies
 Title:			"Observation - Mother Total Pregnancies (BDR)"
 Description:	"The mother's total number of prior pregnancies before the current one."
 * code = LN#11996-6
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientMother)
 * subject 1..1
 * value[x] only integer
 * value[x] 1..1
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
 
-
-
-Profile:		BDRMotherLaborOnset
-Parent:			Observation
-Id:				bdr-motherlaboronset
-Title:			"Observation - Mother Labor Onset (BDR)"
-Description:	"Serious complications experienced by the mother associated with labor and delivery."
-* code = LN#73774-2
-* subject only Reference(BDRPatient)
-* subject 1..1
-* value[x] only CodeableConcept
-* value[x] 1..1
-* value[x] from https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7123 (required)
-* ^jurisdiction.coding = COUNTRY#US "United States of America"
 
 
 Profile:		BDRMotherPreviousPretermBirths
@@ -180,7 +166,7 @@ Id:				bdr-motherpreviouspretermbirths
 Title:			"Observation - Mother Previous Preterm Births (BDR)"
 Description:	"The total number of children for the mother whose birth occurred through the end of the last day of the 37th week (259th day) following onset of the last menstrual period in previous pregnancies."
 * code = LN#11637-6
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientMother)
 * subject 1..1
 * value[x] only integer
 * value[x] 1..1

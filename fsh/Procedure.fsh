@@ -8,7 +8,7 @@ Id:             bdr-newbornprocedure
 Title:          "Newborn Procedure (BDR)"
 Description:    "A report of a procedure performed the report subject"
 * code from ProcedureList (extensible)
-* subject only Reference(BDRPatient)
+* subject only Reference(BDRPatientSubject)
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
 
 
