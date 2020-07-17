@@ -11,7 +11,7 @@ Description:	"The education Level of the birth defect report subject's parent."
 * subject only Reference(BDRPatientSubject)
 * subject 1..1
 * subject ^short = "This is the subject of the report, not the parent"
-* focus only Reference(BDRRelatedPersonMother | BDRRelatedPersonFather)
+* focus only Reference(BDRRelatedPersonMother or BDRRelatedPersonFather)
 * focus 1..1
 * focus ^short = "The RelatedPerson record for the parent"
 * value[x] only CodeableConcept

@@ -20,8 +20,8 @@ Description:	"The bundle of birth defect report resources."
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
 
 
-Profile:	BDRMessageHeader
-Parent:				MessageHeader
+Profile:		BDRMessageHeader
+Parent:			MessageHeader
 Id:				bdr-messageheader
 Title:			"Message Header (BDR)"
 Description:	"The message header for the birth defect report."

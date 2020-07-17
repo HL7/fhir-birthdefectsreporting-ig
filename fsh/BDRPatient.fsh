@@ -19,6 +19,7 @@ Description:    "The subject patient for whom clinical data is included in the r
 * identifier[MRN] ^short = "Medical Record Number"
 * identifier[SSN].type = idType#SB
 * identifier[SSN] ^short = "SSN if available and appropriate to send"
+* identifier[SSN].system = "http://hl7.org/fhir/sid/us-ssn"
 * name 1..*
 * name.family 1..1
 * birthDate 1..1

@@ -1,7 +1,7 @@
 Alias: birthPlaceExt = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: USCoreRace = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 Alias: USCoreEthnicity = http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
-Alias: RelationshipVS = http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype
+Alias: RelationshipVS = http://terminology.hl7.org/CodeSystem/v3-RoleCode 
 
 
 Profile:        BDRRelatedPerson
