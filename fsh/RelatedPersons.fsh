@@ -1,8 +1,21 @@
+Profile:		BDRRelatedPersonResponsibleParty
+Parent:			RelatedPerson
+Id:				bdr-relatedpersonresponsibleparty
+Title:			"RelatedPerson - Responsible Party"
+Description:	"An individual responsible for the birth defect subject. Mother and father are captured separately."
+* relationship 1..* MS 
+* name 1..* MS
+* telecom MS
+* address MS
+* ^jurisdiction.coding = COUNTRY#US "United States of America"
+
+
+
+/* Replaced by common IG
 Alias: birthPlaceExt = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: USCoreRace = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 Alias: USCoreEthnicity = http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
-Alias: RelationshipVS = http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype
-
+Alias: RelationshipVS = http://terminology.hl7.org/CodeSystem/v3-RoleCode 
 
 Profile:        BDRRelatedPerson
 Parent:         RelatedPerson
@@ -41,20 +54,6 @@ Title:			"Father (BDR)"
 Description:	"The father of the birth defect report subject. Different individuals may play different roles as the father (eg. biological father, adoptive father, etc)"
 * relationship from FatherRelationship (extensible)
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
-
-
-
-Profile:		BDRRelatedPersonResponsibleParty
-Parent:			RelatedPerson
-Id:				bdr-relatedpersonresponsibleparty
-Title:			"Responsible Party (BDR)"
-Description:	"An individual responsible for the birth defect subject. Mother and father are captured separately."
-* relationship 1..* MS 
-* name 1..* MS
-* telecom MS
-* address MS
-* ^jurisdiction.coding = COUNTRY#US "United States of America"
-
 
 
 Extension:		RelatedPersonDeceased
@@ -110,3 +109,4 @@ Description:	"Relationships describing the father's role relative to the birth d
 * RelationshipVS#NFTH "natural father"
 * RelationshipVS#STPFTH "stepfather"
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
+*/

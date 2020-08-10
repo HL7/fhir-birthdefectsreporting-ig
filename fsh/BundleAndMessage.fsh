@@ -3,7 +3,7 @@ Alias:			LN = http://loinc.org
 Profile:		BDRMessageBundle
 Parent:			Bundle
 Id:				bdr-bundle
-Title:			"Report Bundle (BDR)"
+Title:			"Bundle - Birth Defect Report"
 Description:	"The bundle of birth defect report resources."
 * identifier 1..1
 * type = #message
@@ -20,10 +20,10 @@ Description:	"The bundle of birth defect report resources."
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
 
 
-Profile:	BDRMessageHeader
-Parent:				MessageHeader
+Profile:		BDRMessageHeader
+Parent:			MessageHeader
 Id:				bdr-messageheader
-Title:			"Message Header (BDR)"
+Title:			"MessageHeader - Birth Defect"
 Description:	"The message header for the birth defect report."
 * event[x] only Coding
 * event[x] from EventTypes
@@ -38,7 +38,7 @@ Description:	"The message header for the birth defect report."
 
 ValueSet:		EventTypes
 Id:				bdr-eventtypes
-Title:			"Report Event Types (BDR)"
+Title:			"Birth Defect Report Event Types"
 Description:	"Event types for the birth defect report"
 * LN#75609-8 "Outpatient Report"
 * LN#85580-9 "Birthing Report"

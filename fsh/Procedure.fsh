@@ -5,10 +5,10 @@ Alias:			SCTUS = http://snomed.info/sct/731000124108
 Profile:        BDRNewbornProcedure
 Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure
 Id:             bdr-newbornprocedure
-Title:          "Newborn Procedure (BDR)"
+Title:          "Procedure - Newborn Procedure"
 Description:    "A report of a procedure performed the report subject"
 * code from ProcedureList (extensible)
-* subject only Reference(BDRPatientSubject)
+* subject only Reference(PatientChild)
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
 
 

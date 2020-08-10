@@ -6,11 +6,11 @@ Alias:			USCoreProblem = http://hl7.org/fhir/us/core/StructureDefinition/us-core
 Profile:        BDRReportableDiagnosis
 Parent:         Condition
 Id:             bdr-reportablediagnosis
-Title:          "Reportable Diagnosis (BDR)"
+Title:          "Condition - Reportable Diagnosis"
 Description:    "A description of a reportable birth defect diagnosis for the report subject"
 * clinicalStatus 1..1
 * verificationStatus 1..1
-* subject only Reference(BDRPatientSubject)
+* subject only Reference(PatientChild)
 * code from codeList (preferred)
 * onset[x] 1..1
 * onset[x] only dateTime
@@ -30,8 +30,8 @@ Description:    "A description of a reportable birth defect diagnosis for the re
 Profile:        BDRConfirmatoryTest
 Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure
 Id:             bdr-confirmatorytest
-Title:          "Diagnosis Confirmatory Test (BDR)"
+Title:          "Procedure - Diagnosis Confirmatory Test"
 Description:    "A procedure used to confirm the reportable birth defect diagnosis for the report subject"
-* subject only Reference(BDRPatientSubject)
+* subject only Reference(PatientChild)
 * code from testList (extensible)
 * ^jurisdiction.coding = COUNTRY#US "United States of America"

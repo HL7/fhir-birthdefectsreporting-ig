@@ -1,6 +1,8 @@
 .DS_Store
 Thumbs.db
+/input-cache
 /input-cache/org.hl7.fhir.publisher.jar
+/input-cache/publisher.jar
 /output
 /template
 /temp
