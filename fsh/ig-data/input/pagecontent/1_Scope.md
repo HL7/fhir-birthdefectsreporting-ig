@@ -17,16 +17,18 @@ Individual data elements can be mapped to specific resource profiles defined by 
 
 ![Birth Defect Report Data Content Mapping](profilemappings.png)
 
+# Related Documents
+HL7 has previous published a [CDA Implementation Guide for birth defect reporting] (http://www.hl7.org/implement/standards/product_brief.cfm?product_id=428). While the content of this document varies slightly from the CDA IG, the core data content of both documents is described in the HL7 Vital Records Domain Analysis Model (DAM).
+
+Many of the data elements described in this document overlap with elements critical to birth and fetal death reporting as described in the BAFD FHIR IG <add link>. The project teams for both Birth Defect Reporting and Birth and Fetal Death Reporting have coordinated activities to ensure reusable profiles have been used where possible resulting in the development of the Vital Records Common Profiles Library FHIR IG <add link>. Many of the profiles used by this implementation guide originate in the common profile library.
+
 # Patient Scope
-In many jurisdictions, the scope of birth defect reporting focuses on subject under the age of 24 months. Jurisdictional requirements may extend the scope to include older subjects (e.g. those under 12 years of age) if the birth defect is not diagnosed at an earlier age. Typically however, reporting  does not extend to adult subjects. Reporting requirements often include both living and deceased subjects and may include stillborn subjects, miscarriages and elective terminations as determined by jurisdictional scope.
+In many jurisdictions, the scope of birth defect reporting focuses on subject under the age of 24 months. Jurisdictional requirements may extend the scope to include older subjects (e.g. those under 12 years of age) if the birth defect is not diagnosed at an earlier age. Typically however, reporting  does not extend to adult subjects. 
+
+Reporting requirements often include both living and deceased subjects and may include stillborn subjects, miscarriages and elective terminations as determined by jurisdictional scope. This implementation guide provides profiles for both scenarios. The Patient - Child profile should be used for reporting where the report subject was a live birth. The Patient - Decedent Fetus profile should be used to report on stillborn subjects, miscarriages and elective terminations as necessary. As well, it should be noted that the Patient - Mother profile is used when the report contains pregnancy/delivery information in the form of Observations where the subject of the Observation is the birth mother.
 
 # Context in the Larger Reporting Framework
 From the perspective of the jurisdictional birth defect registry, a birth defect case for a given subject may be comprised of data collected from multiple sources submitted over an extended time period. Compiled cases may then shared with or reported to national programs. For the purposes of this Implementation Guide, we will focus on the requirements for providers and organizations to submit reports containing birth defect related data to the jurisdictional birth defect registry. The consolidation of data from these reports by the jurisdiction into a larger case, and the reporting of that case data to a national consumer may be the subject of future iterations of this specification. 
-
-# Related Documents
-HL7 has previous published a CDA Implementation Guide for birth defect reporting. While the content of this document varies slightly from the CDA IG, the core data content of both documents is described in the HL7 Vital Records Domain Analysis Model (DAM).
-
-Many of the data elements described in this document overlap with elements critical to birth and fetal death reporting as described in the BAFD FHIR IG. The project teams for both Birth Defect Reporting and Birth and Fetal Death Reporting have coordinated activities to ensure reusable profiles have been used where possible. 
 
 # Usage in Other Realms
 While this document is US Realm specific, the constraints and content of this specification may be applicable to other jurisdictions.

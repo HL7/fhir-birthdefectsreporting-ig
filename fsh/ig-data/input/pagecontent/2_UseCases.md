@@ -1,5 +1,5 @@
 # Reporting Contexts
-Providers reporting to birth defect registries may be operating in a variety of different healthcare contexts including ambulatory, outpatient and hospital settings. While the core data elements of the birth defect diagnoses report is substantially similar regardless of the submitter's context, when the report is generated as part of the delivery encounter at a birthing facility the expectations of the receiving jurisdictional program for data relating to the pregnancy and delivery encounter may be higher. Implementers of this IG should be prepared to exchange any of the data elements described within depending on the nature of the submitter and the local requirements for reporting.
+Providers reporting to birth defect registries may be operating in a variety of different healthcare contexts including ambulatory, outpatient and hospital settings. While the core data elements of the birth defect diagnoses report is substantially similar regardless of the submitter's context, when the report is generated as part of the delivery encounter at a birthing facility the expectations of the receiving jurisdictional program for data relating to the pregnancy and delivery encounter may be higher. Implementers of this IG should be prepared to exchange any of the data elements described within depending on the nature of the submitter and the local requirements for reporting (see below for more details).
 
 # Actors
 The primary actors in the provider reporting use case are:
@@ -22,15 +22,17 @@ The following basic assumptions apply regardless of the reporting context:
 * The EHR or an associated app has the capability to create an electronic report (FHIR resources) in conformance with the structure and content standards specified in this implementation guide. 
 * The EHR has the capability to transmit the generated report, using the appropriate transport method(s) and network(s). 
 
+# Report Content
+Depending on the context of the report the clinical content of the report may vary. At a minimum, all reports should contain a central core of data including a Patient (report subject) resource, an Observation (indicating if the subject was living at the time of reporting) resource and one or more Condition (Reportable Diagnosis) resources. Additional RelatedPerson resources containing data on the Mother, Father and/or Responsible Party are strongly encouraged. Note the additional Observation resources related to the Mother or Father may also be present to indicate parental education level and maternal characteristics (eg. possible drug and alcohol use, risk factors and exposures). As described further below, genetic testing results may also be included as clinical content.
+
+When the report is generated as part of the delivery encounter at a birthing facility the clinical content of the report should include additional data related to the pregnancy and delivery. The inclusion of Observation resources related to the pregnancy (eg. prenatal care, previous pregnancies, maternal vitals) require the presence of a Patient (mother) resource to act as the subject of the relationship.  Inclusion of Observation resources related to the newborn (eg. APGAR scores and newborn vitals) and newborn Procedure resources are also strongly encouraged to be included as clinical content in the report.
+
 # Transport Option
 The primary option for transmitting the content in this implementation guide is the use of FHIR Messaging. FHIR Messaging involves the use of a top-level FHIR Message bundle and then a small FHIR Messaging header. FHIR Messaging enables the movement of content through an information exchange intermediary and allows, but does not require, a store and forward exchange paradigm. The FHIR Message header includes the identity of the ultimate intended recipient and other information helpful for message exchange. All resources should be populated in the FHIR Message bundle because subsequent retrieval of resources back through an intermediary may not be enabled.
 
 The following profiles have been defined for the FHIR Messaging Option:
 *BDR Report Bundle
 *BDR MessageHeader
-
-# Guidance for When There is no Subject Record
-TBD - what are the implications of reporting on stillborns, miscarriages and elective terminations when there may be no Subject (Patient) record? Is a Mother (Patient) record with data relating to her sufficient? The Condition resource does require a .subject pointing to a Patient record. Or is the Subject (Patient) record just a bare minimum of data? This could have implications for things like the date of birth.
 
 # Guidance for Reporting Genetic Testing
 A subset of genetic tests may be important to include in birth defect reports. Genetic test results may be reported using the US Core DiagnosticReport profile. The scope of tests may vary by jurisdiction but could include test types such as:
