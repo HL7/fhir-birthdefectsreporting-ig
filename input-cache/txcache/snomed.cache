@@ -3,7 +3,6 @@
   "system" : "http://snomed.info/sct",
   "code" : "312948004"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-<<<<<<< HEAD
 v: {
   "display" : "Karyotype determination",
   "severity" : null,
@@ -34,17 +33,14 @@ v: {
   "system" : "http://snomed.info/sct",
   "code" : "160573003"
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-=======
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 v: {
-  "display" : "Karyotype determination",
+  "display" : "Alcohol intake",
   "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://snomed.info/sct",
-<<<<<<< HEAD
   "code" : "305351004",
   "display" : "Admission to intensive care unit"
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
@@ -139,19 +135,14 @@ v: {
     }]
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-=======
-  "code" : "444309000"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 v: {
-  "display" : "Determination of karyotype from blood specimen (procedure)",
+  "display" : "Karyotype determination",
   "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://snomed.info/sct",
-<<<<<<< HEAD
   "code" : "312948004",
   "display" : "Karyotype determination"
 }, "valueSet" :{
@@ -225,12 +216,6 @@ v: {
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Livebirth",
-=======
-  "code" : "160573003"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Alcohol intake",
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
   "severity" : null,
   "error" : ""
 }
@@ -256,13 +241,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-<<<<<<< HEAD
-    "identifier" : "urn:uuid:e07dc694-7d54-4305-913a-a466cd3c6e1d",
-    "timestamp" : "2020-08-07T13:06:23.215Z",
-=======
-    "identifier" : "urn:uuid:bf27697c-83b3-4f60-a91d-cc92fe8e96e7",
-    "timestamp" : "2020-07-08T14:20:38.632Z",
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
+    "identifier" : "urn:uuid:33ce7e97-a0be-4da2-98ca-a1b90512a8df",
+    "timestamp" : "2020-08-10T15:47:20.342Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -283,39 +263,6 @@ e: {
     }]
   }
 },
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "719046005",
-  "display" : "12q14 microdeletion syndrome (disorder)"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "12q14 microdeletion syndrome (disorder)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "66071002",
-  "display" : "Hepatitis B"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Type B viral hepatitis",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "160573003",
-  "display" : "Alcohol Intake"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Alcohol intake",
-  "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------

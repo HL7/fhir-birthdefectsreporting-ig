@@ -2,7 +2,7 @@ Alias: 			birthPlaceExt = http://hl7.org/fhir/StructureDefinition/patient-birthP
 Alias: 			idType = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias:			linkType = http:hl7.org/fhir/link-type
 
-
+/*
 Profile:        BDRPatientSubject
 Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
 Id:             bdr-patientsubject

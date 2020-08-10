@@ -1,7 +1,7 @@
 //Observations shared with Birth and Fetal Death Reporting
 Alias:			LN = http://loinc.org
 Alias:			COUNTRY = urn:iso:std:iso:3166
-
+/*
 Profile:		ParentEducationLevel
 Parent:			Observation
 Id:				parenteducationlevel
@@ -301,3 +301,4 @@ Description:	"Standard timings for APGAR assessments."
 * LN#9274-2 "5 minute Apgar Score"
 * LN#9271-8 "10 minute Apgar Score"
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
+*/

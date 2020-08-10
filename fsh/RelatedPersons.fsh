@@ -16,10 +16,6 @@ Alias: birthPlaceExt = http://hl7.org/fhir/StructureDefinition/patient-birthPlac
 Alias: USCoreRace = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 Alias: USCoreEthnicity = http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
 Alias: RelationshipVS = http://terminology.hl7.org/CodeSystem/v3-RoleCode 
-<<<<<<< HEAD
-=======
-
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 
 Profile:        BDRRelatedPerson
 Parent:         RelatedPerson

@@ -10,14 +10,3 @@ v: {
   "error" : "The code \"QVU94XE61A\" is not valid in the system http://fdasis.nlm.nih.gov; The code provided (http://fdasis.nlm.nih.gov#QVU94XE61A) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://fdasis.nlm.nih.gov",
-  "code" : "6DZ28538KS",
-  "display" : "ACETYLFENTANYL"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code \"6DZ28538KS\" is not valid in the system http://fdasis.nlm.nih.gov; The code provided (http://fdasis.nlm.nih.gov#6DZ28538KS) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------

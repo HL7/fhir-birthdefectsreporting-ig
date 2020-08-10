@@ -27,10 +27,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 3.1.0
-<<<<<<< HEAD
   hl7.fhir.us.fhir-vr-common-ig: current
-=======
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 parameters:
   show-inherited-invariants: false
 jurisdiction: urn:iso:std:iso:3166#US

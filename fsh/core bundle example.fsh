@@ -22,25 +22,15 @@ Usage: 			#example
 * entry[1].resource.clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
 * entry[1].resource.verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
 * entry[1].resource.code = SCT#719046005 "12q14 microdeletion syndrome (disorder)"
-<<<<<<< HEAD
 * entry[1].resource.subject = Reference(PatientChildExample)
-=======
-* entry[1].resource.subject = Reference(BDRPatientExample)
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * entry[1].resource.onsetDateTime = "2020-07-15"
 * entry[2].fullUrl = "http://acme.com/ehr/fhir/Organization/BDRSubmittterExample"
 * entry[2].resource.resourceType = "Organization"
 * entry[2].resource.id = "BDRSubmittterExample"
 * entry[2].resource.name = "Westside Clinic"
-<<<<<<< HEAD
 * entry[3].fullUrl = "http://acme.com/ehr/fhir/Patient/PatientChildExample"
 * entry[3].resource.resourceType = "Patient"
 * entry[3].resource.id = "PatientChildExample"
-=======
-* entry[3].fullUrl = "http://acme.com/ehr/fhir/Patient/BDRPatientExample"
-* entry[3].resource.resourceType = "Patient"
-* entry[3].resource.id = "BDRPatientExample"
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * entry[3].resource.identifier[0].value = "1234"
 * entry[3].resource.identifier[0].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
 * entry[3].resource.identifier[0].system = "http://www.acme.com/identifiers/patient"
@@ -61,11 +51,7 @@ Usage: 			#example
 * entry[4].fullUrl = "http://acme.com/ehr/fhir/Patient/MotherRelatedPersonExample"
 * entry[4].resource.resourceType = "RelatedPerson"
 * entry[4].resource.id = "MotherRelatedPersonExample"
-<<<<<<< HEAD
 * entry[4].resource.patient = Reference(PatientChildExample)
-=======
-* entry[4].resource.patient = Reference(BDRPatientExample)
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * entry[4].resource.relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH "Mother"
 * entry[4].resource.name.family = "Wellington"
 * entry[4].resource.name.given = "Sara"
@@ -82,11 +68,7 @@ Usage: 			#example
 * entry[5].fullUrl = "http://acme.com/ehr/fhir/Patient/FatherRelatedPersonExample"
 * entry[5].resource.resourceType = "RelatedPerson"
 * entry[5].resource.id = "FatherRelatedPersonExample"
-<<<<<<< HEAD
 * entry[5].resource.patient = Reference(PatientChildExample)
-=======
-* entry[5].resource.patient = Reference(BDRPatientExample)
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * entry[5].resource.relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#FTH "Father"
 * entry[5].resource.name.family = "Wellington"
 * entry[5].resource.name.given = "Adam"
@@ -105,11 +87,7 @@ Usage: 			#example
 * entry[6].resource.id = "BDRMotherEducationExample"
 * entry[6].resource.status = #final
 * entry[6].resource.code = LN#57712-2 "Highest level of education Mother"
-<<<<<<< HEAD
 * entry[6].resource.subject = Reference(PatientChildExample)
-=======
-* entry[6].resource.subject = Reference(BDRPatientExample)
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * entry[6].resource.focus = Reference(MotherRelatedPersonExample)
 * entry[6].resource.valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-EducationLevel#BD
 * entry[7].fullUrl = "http://acme.com/ehr/fhir/Observation/BDRFatherEducationExample"
@@ -117,35 +95,22 @@ Usage: 			#example
 * entry[7].resource.id = "BDRFatherEducationExample"
 * entry[7].resource.status = #final
 * entry[7].resource.code = LN#87300-0 "Highest level of education Father"
-<<<<<<< HEAD
 * entry[7].resource.subject = Reference(PatientChildExample)
-=======
-* entry[7].resource.subject = Reference(BDRPatientExample)
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * entry[7].resource.focus = Reference(FatherRelatedPersonExample)
 * entry[7].resource.valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-EducationLevel#SCOL
 * entry[8].fullUrl = "http://acme.com/ehr/fhir/Observation/BDRInfantLiving"
 * entry[8].resource.resourceType = "Observation"
 * entry[8].resource.id = "BDRInfantLiving"
 * entry[8].resource.status = #final
-<<<<<<< HEAD
 * entry[8].resource.code = LN#73757-7 "Infant living at time of report [US Standard Certificate of Live Birth]"
 * entry[8].resource.subject = Reference(PatientChildExample)
-=======
-* entry[8].resource.code = LN#73757-7 "Infant living at time of report"
-* entry[8].resource.subject = Reference(BDRPatientExample)
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * entry[8].resource.valueBoolean = true
 * entry[9].fullUrl = "http://acme.com/ehr/fhir/Observation/BDRMotherAlcoholUse"
 * entry[9].resource.resourceType = "Observation"
 * entry[9].resource.id = "BDRMotherAlcoholUse"
 * entry[9].resource.status = #final
 * entry[9].resource.code = SCT#160573003 "Alcohol Intake"
-<<<<<<< HEAD
 * entry[9].resource.subject = Reference(PatientChildExample)
-=======
-* entry[9].resource.subject = Reference(BDRPatientExample)
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * entry[9].resource.focus = Reference(MotherRelatedPersonExample)
 * entry[9].resource.valueString = "No alcohol use during pregnancy"
 
@@ -156,11 +121,7 @@ Usage: 			#example
 * entry[10].resource.id = "BDRMotherDrugUse"
 * entry[10].resource.status = #final
 * entry[10].resource.code = LN#89495-6 "Drug use by Mother --during pregnancy"
-<<<<<<< HEAD
 * entry[10].resource.subject = Reference(PatientChildExample)
-=======
-* entry[10].resource.subject = Reference(BDRPatientExample)
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * entry[10].resource.focus = Reference(MotherRelatedPersonExample)
 * entry[10].resource.valueCodeableConcept = http://fdasis.nlm.nih.gov#6DZ28538KS "ACETYLFENTANYL"
 */

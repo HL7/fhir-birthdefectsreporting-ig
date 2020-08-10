@@ -1,83 +1,8 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
-<<<<<<< HEAD
   "code" : "75609-8"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-=======
-  "code" : "9272-6"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "1 minute Apgar Score",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "9274-2"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "5 minute Apgar Score",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "9271-8"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "10 minute Apgar Score",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "87300-0"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Highest level of education Father",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "57712-2"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Highest level of education Mother",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "75609-8"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Birth defects Outpatient Registry report",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "85580-9"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Birth defects Hospital Registry report",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "73768-4"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 v: {
   "display" : "Birth defects Outpatient Registry report",
   "severity" : null,
@@ -199,11 +124,7 @@ v: {
   "code" : "11996-6"
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-<<<<<<< HEAD
   "display" : "[#] Pregnancies",
-=======
-  "display" : "Place where birth occurred [US Standard Certificate of Live Birth]",
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
   "severity" : null,
   "error" : ""
 }
@@ -260,13 +181,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-<<<<<<< HEAD
-    "identifier" : "urn:uuid:665e7928-1c9a-46a0-aa35-c2c1bf2d3d10",
-    "timestamp" : "2020-08-07T13:05:19.980Z",
-=======
-    "identifier" : "urn:uuid:5c90bb47-f3a0-4528-93ec-fc39fc4ca008",
-    "timestamp" : "2020-07-15T16:28:00.147Z",
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
+    "identifier" : "urn:uuid:7d90cebe-be13-4cd8-8a63-e503b30c0e58",
+    "timestamp" : "2020-08-10T15:46:08.076Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -362,17 +278,12 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-<<<<<<< HEAD
     "extension" : [{
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:fa482051-494f-4a44-8140-56f2eaeeb892",
-    "timestamp" : "2020-08-07T13:05:20.199Z",
-=======
-    "identifier" : "urn:uuid:01e020f7-16c6-44c7-a255-7a6c7f7dbec6",
-    "timestamp" : "2020-07-15T16:28:00.366Z",
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
+    "identifier" : "urn:uuid:b0da2e61-6165-4e21-9f44-4e494974575e",
+    "timestamp" : "2020-08-10T15:46:08.279Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -397,7 +308,6 @@ e: {
     },
     {
       "system" : "http://loinc.org",
-<<<<<<< HEAD
       "code" : "100-8",
       "display" : "Cefoperazone [Susceptibility] by Minimum inhibitory concentration (MIC)"
     },
@@ -407,155 +317,6 @@ e: {
       "display" : "DBG Ab [Presence] in Serum or Plasma from Blood product unit"
     },
     {
-=======
-      "code" : "9271-8",
-      "display" : "10 minute Apgar Score"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}}####
-e: {
-  "error" : "Error from server: Access violation at address 00000000006BA5AD in module 'FHIRServer.exe'. Read of address 0000000000000009"
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "72166-2",
-        "display" : "Tobacco smoking status NHIS"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "status" : "active",
-  "expansion" : {
-    "identifier" : "urn:uuid:ac43f22a-b967-487a-972a-45404acbb627",
-    "timestamp" : "2020-07-15T16:28:01.397Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "excludeNested",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org|2.68"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "72166-2",
-      "display" : "Tobacco smoking status NHIS"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "87300-0",
-        "display" : "Highest level of education Father"
-      },
-      {
-        "code" : "57712-2",
-        "display" : "Highest level of education Mother"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "status" : "active",
-  "expansion" : {
-    "identifier" : "urn:uuid:c2aa0fac-67a1-4d92-a145-3b20eef3432b",
-    "timestamp" : "2020-07-15T16:28:02.928Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "excludeNested",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org|2.68"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "87300-0",
-      "display" : "Highest level of education Father"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "57712-2",
-      "display" : "Highest level of education Mother"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "9272-6",
-        "display" : "1 minute Apgar Score"
-      },
-      {
-        "code" : "9274-2",
-        "display" : "5 minute Apgar Score"
-      },
-      {
-        "code" : "9271-8",
-        "display" : "10 minute Apgar Score"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "status" : "active",
-  "expansion" : {
-    "identifier" : "urn:uuid:0e25bb18-89a3-4df6-89b1-66fc3afc670b",
-    "timestamp" : "2020-07-15T16:29:55.450Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org|2.68"
-    }],
-    "contains" : [{
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
       "system" : "http://loinc.org",
       "code" : "10000-8",
       "display" : "R wave duration in lead AVR"
@@ -572,40 +333,10 @@ e: {
     },
     {
       "system" : "http://loinc.org",
-<<<<<<< HEAD
       "code" : "10003-2",
       "display" : "R wave duration in lead III"
     },
     {
-=======
-      "concept" : [{
-        "code" : "87300-0",
-        "display" : "Highest level of education Father"
-      },
-      {
-        "code" : "57712-2",
-        "display" : "Highest level of education Mother"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "status" : "active",
-  "expansion" : {
-    "identifier" : "urn:uuid:c694c7c4-82f7-4439-9b6d-d11b75366047",
-    "timestamp" : "2020-07-15T16:29:55.778Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org|2.68"
-    }],
-    "contains" : [{
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
       "system" : "http://loinc.org",
       "code" : "10004-0",
       "display" : "R wave duration in lead V1"
@@ -5587,8 +5318,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:3e2e5ddb-6bcd-42b2-9a4f-78bfb83ee216",
-    "timestamp" : "2020-08-07T13:05:20.996Z",
+    "identifier" : "urn:uuid:b9ec408a-c1e8-4061-97c7-f113db222084",
+    "timestamp" : "2020-08-10T15:46:08.983Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -6460,13 +6191,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-<<<<<<< HEAD
-    "identifier" : "urn:uuid:ea494e83-dc26-4829-9078-19bf91bb543b",
-    "timestamp" : "2020-08-07T13:06:22.887Z",
-=======
-    "identifier" : "urn:uuid:f6970ccc-d220-47f1-9807-60085c64d1db",
-    "timestamp" : "2020-07-15T16:29:56.106Z",
->>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
+    "identifier" : "urn:uuid:71d5024c-72c8-4e27-b7d4-17ee52382277",
+    "timestamp" : "2020-08-10T15:47:19.874Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -6487,135 +6213,6 @@ e: {
     }]
   }
 },
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "75609-8",
-  "display" : "Outpatient Report"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Birth defects Outpatient Registry report",
-  "severity" : "warning",
-  "error" : "The display \"Outpatient Report\" is not a valid display for the code {http://loinc.org}75609-8 - should be one of [\"Birth defects Outpatient Registry report\",\"Birth defects OP Registry rpt\"]"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "75609-8",
-  "display" : "Outpatient Report"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "75609-8",
-        "display" : "Outpatient Report"
-      },
-      {
-        "code" : "85580-9",
-        "display" : "Birthing Report"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Birth defects Outpatient Registry report",
-  "severity" : "warning",
-  "error" : "The display \"Outpatient Report\" is not a valid display for the code {http://loinc.org}75609-8 - should be one of [\"Birth defects Outpatient Registry report\",\"Birth defects OP Registry rpt\",\"Birth defects OP Registry rpt\"]"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "87300-0",
-  "display" : "Highest level of education Father"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Highest level of education Father",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "75609-8",
-  "display" : "Birth defects Outpatient Registry report"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Birth defects Outpatient Registry report",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "75609-8",
-  "display" : "Birth defects Outpatient Registry report"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "75609-8",
-        "display" : "Outpatient Report"
-      },
-      {
-        "code" : "85580-9",
-        "display" : "Birthing Report"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Birth defects Outpatient Registry report",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "57712-2",
-  "display" : "Highest level of education Mother"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Highest level of education Mother",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "73757-7",
-  "display" : "Infant living at time of report"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Infant living at time of report [US Standard Certificate of Live Birth]",
-  "severity" : "warning",
-  "error" : "The display \"Infant living at time of report\" is not a valid display for the code {http://loinc.org}73757-7 - should be one of [\"Infant living at time of report [US Standard Certificate of Live Birth]\",]"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "89495-6",
-  "display" : "Drug use by mother - during pregnancy"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Drug use by Mother --during pregnancy",
-  "severity" : "warning",
-  "error" : "The display \"Drug use by mother - during pregnancy\" is not a valid display for the code {http://loinc.org}89495-6 - should be one of [\"Drug use by Mother --during pregnancy\",\"Drug use preg Mother\"]"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "89495-6",
-  "display" : "Drug use by Mother --during pregnancy"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Drug use by Mother --during pregnancy",
-  "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------
