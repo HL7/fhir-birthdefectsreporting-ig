@@ -13,6 +13,7 @@ Usage: 			#example
 
 
 Instance:		BDRSubmittterExample
+<<<<<<< HEAD
 InstanceOf: 	BDROrganization
 Description: 	"Example BDR Submitter Organization"
 Usage: 			#example
@@ -35,6 +36,20 @@ InstanceOf: 	PatientChild
 Description: 	"Example BDR Patient"
 Usage: 			#example
 * id = "PatientChildExample"
+=======
+InstanceOf: 	Organization
+Description: 	"Example BDR Submitter Organization"
+Usage: 			#example
+* id = "BDRSubmittterExample"
+* name = "Westside Clinic"
+
+
+Instance:		BDRPatientExample
+InstanceOf: 	BDRPatientSubject
+Description: 	"Example BDR Patient"
+Usage: 			#example
+* id = "BDRPatientExample"
+>>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * extension[http://hl7.org/fhir/us/core/StructureDefinition/us-core-race].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
 * extension[http://hl7.org/fhir/us/core/StructureDefinition/us-core-race].extension[text].valueString = "White"
 * extension[http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
@@ -59,11 +74,19 @@ Usage: 			#example
 
 
 Instance:		MotherRelatedPersonExample
+<<<<<<< HEAD
 InstanceOf: 	RelatedPersonMother
 Description: 	"Example Mother Related Person"
 Usage: 			#example
 * id = "MotherRelatedPersonExample"
 * patient = Reference(PatientChildExample)
+=======
+InstanceOf: 	BDRRelatedPersonMother
+Description: 	"Example Mother Related Person"
+Usage: 			#example
+* id = "MotherRelatedPersonExample"
+* patient = Reference(BDRPatientExample)
+>>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH "Mother"
 * name.family = "Wellington"
 * name.given = "Sara"
@@ -80,11 +103,19 @@ Usage: 			#example
 
 
 Instance:		FatherRelatedPersonExample
+<<<<<<< HEAD
 InstanceOf: 	RelatedPersonFather
 Description: 	"Example Father Related Person"
 Usage: 			#example
 * id = "FatherRelatedPersonExample"
 * patient = Reference(PatientChildExample)
+=======
+InstanceOf: 	BDRRelatedPersonFather
+Description: 	"Example Father Related Person"
+Usage: 			#example
+* id = "FatherRelatedPersonExample"
+* patient = Reference(BDRPatientExample)
+>>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#FTH "Father"
 * name.family = "Wellington"
 * name.given = "Adam"
@@ -105,7 +136,11 @@ InstanceOf: 	BDRRelatedPersonResponsibleParty
 Description: 	"Example Responsible Party"
 Usage: 			#example
 * id = "ResponsiblePartyExample"
+<<<<<<< HEAD
 * patient = Reference(PatientChildExample)
+=======
+* patient = Reference(BDRPatientExample)
+>>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#GRMTH "Grandmother"
 * name.family = "Moore"
 * name.given = "Helen"
@@ -121,6 +156,7 @@ Usage: 			#example
 * communication.language = urn:ietf:bcp:47#en "English"
 
 
+<<<<<<< HEAD
 Instance:		NewbornProcedureExample
 InstanceOf: 	BDRNewbornProcedure
 Description: 	"Example Procedure Performed on the Newborn"
@@ -143,6 +179,8 @@ Usage: 			#example
 * performedDateTime = "2020-07-14"
 
 
+=======
+>>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 Instance:		ReportableDiagnosisExample
 InstanceOf: 	BDRReportableDiagnosis
 Description: 	"Example Reportable Diagnosis"
@@ -151,6 +189,7 @@ Usage: 			#example
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
 * code = SCT#719046005 "12q14 microdeletion syndrome (disorder)"
+<<<<<<< HEAD
 * subject = Reference(PatientChildExample)
 * onsetDateTime = "2020-07-15"
 * evidence.detail = Reference(ConfirmatoryTestExample)
@@ -164,10 +203,25 @@ Usage: 			#example
 * status = #final
 * code = LN#57712-2 "Highest level of education Mother"
 * subject = Reference(PatientChildExample)
+=======
+* subject = Reference(BDRPatientExample)
+* onsetDateTime = "2020-07-15"
+
+
+Instance:		BDRMotherEducationExample
+InstanceOf: 	Observation
+Description: 	"Example BDR Observation of the Mother's Education"
+Usage: 			#example
+* id = "BDRMotherEducationExample"
+* status = #final
+* code = LN#57712-2 "Highest level of education Mother"
+* subject = Reference(BDRPatientExample)
+>>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * focus = Reference(MotherRelatedPersonExample)
 * valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-EducationLevel#BD
 
 
+<<<<<<< HEAD
 Instance:		FatherEducationExample
 InstanceOf: 	ObservationParentEducationLevel
 Description: 	"Example Observation of the Father's Education"
@@ -176,10 +230,21 @@ Usage: 			#example
 * status = #final
 * code = LN#87300-0 "Highest level of education Father"
 * subject = Reference(PatientChildExample)
+=======
+Instance:		BDRFatherEducationExample
+InstanceOf: 	Observation
+Description: 	"Example BDR Observation of the Father's Education"
+Usage: 			#example
+* id = "BDRFatherEducationExample"
+* status = #final
+* code = LN#87300-0 "Highest level of education Father"
+* subject = Reference(BDRPatientExample)
+>>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
 * focus = Reference(FatherRelatedPersonExample)
 * valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-EducationLevel#SCOL
 
 
+<<<<<<< HEAD
 Instance:		InfantLivingExample
 InstanceOf: 	ObservationInfantLiving
 Description: 	"Example Observation of if the Infant is Living at the Time of Reporting"
@@ -237,3 +302,39 @@ Usage: 			#example
 * subject = Reference(PatientChildExample)
 * focus = Reference(MotherRelatedPersonExample)
 * valueCodeableConcept = http://fdasis.nlm.nih.gov#QVU94XE61A "3-METHYLFENTANYL"
+=======
+Instance:		BDRInfantLiving
+InstanceOf: 	Observation
+Description: 	"Example BDR Observation of if the Infant is Living at the Time of Reporting"
+Usage: 			#example
+* id = "BDRInfantLiving"
+* status = #final
+* code = LN#73757-7 "Infant living at time of report"
+* subject = Reference(BDRPatientExample)
+* valueBoolean = true
+
+
+Instance:		BDRMotherAlcoholUse
+InstanceOf: 	Observation
+Description: 	"Example BDR Observation of the Mother's Alcohol Use During Pregnancy"
+Usage: 			#example
+* id = "BDRMotherAlcoholUse"
+* status = #final
+* code = SCT#160573003 "Alcohol Intake"
+* subject = Reference(BDRPatientExample)
+* focus = Reference(MotherRelatedPersonExample)
+* valueString = "No alcohol use during pregnancy"
+
+/*
+Instance:		BDRMotherDrugUse
+InstanceOf: 	Observation
+Description: 	"Example BDR Observation of the Mother's Drug Use During Pregnancy"
+Usage: 			#example
+* id = "BDRMotherDrugUse"
+* status = #final
+* code = LN#89495-6 "Drug use by Mother --during pregnancy"
+* subject = Reference(BDRPatientExample)
+* focus = Reference(MotherRelatedPersonExample)
+* valueCodeableConcept = http://fdasis.nlm.nih.gov#QVU94XE61A "3-METHYLFENTANYL"
+*/
+>>>>>>> a17708bb36ec77244641b2a671674db5c7b22365
