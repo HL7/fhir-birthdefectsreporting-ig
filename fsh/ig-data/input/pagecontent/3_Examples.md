@@ -31,7 +31,7 @@ Melanie Aurora Boucher is a female born at Ann Arbor General Hospital on 8/8/202
 * [Observation (mother's exposures during pregnancy)](Observation-MotherExposureBirthingExample.html)
 * [Observation (mother's risk factors during pregnancy)](Observation-MotherRiskFactorBirthingExample.html)
 * [Observation (father's education level)](Observation-FatherEducationBirthingExample.html)
-* [Patient (Miranda as a patient)](Patient-BDRMotherPatientExample.html)
+* [Patient (Miranda as a patient)](Patient-MotherPatientExample.html)
 * [Observation (mother's primary insurance)](Observation-PrimaryInsuranceExample.html)
 * [Observation (mother's number of previous preterm births)](Observation-PreviousPretermBirthsExample.html)
 * [Observation (mother's number of previous pregnancies)](Observation-TotalPregnanciesExample.html)

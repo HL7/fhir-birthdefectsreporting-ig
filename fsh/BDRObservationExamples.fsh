@@ -1,10 +1,10 @@
 Alias:			PHDSC = urn:oid:2.16.840.1.113883.3.221.5 
 
-Instance:          BDRMotherPatientExample
+Instance:          MotherPatientExample
 InstanceOf:        PatientMother
 Description:       "Example Mother as a Patient"
 Usage:             #example
-* id = "BDRMotherPatientExample"
+* id = "MotherPatientExample"
 * extension[http://hl7.org/fhir/us/core/StructureDefinition/us-core-race].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
 * extension[http://hl7.org/fhir/us/core/StructureDefinition/us-core-race].extension[text].valueString = "White"
 * extension[http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
@@ -98,7 +98,7 @@ Usage:              #example
 * id = "PrimaryInsuranceExample"
 * status = #final
 * code = LN#76437-3 "Primary insurance"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * valueCodeableConcept = PHDSC#5 "Private Health Insurance"
 
 
@@ -109,7 +109,7 @@ Usage:              #example
 * id = "PreviousPretermBirthsExample"
 * status = #final
 * code = LN#11637-6 "[#] Births.preterm"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * valueInteger = 1 
 
 
@@ -120,6 +120,6 @@ Usage:              #example
 * id = "TotalPregnanciesExample"
 * status = #final
 * code = LN#11996-6 "[#] Pregnancies"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * valueInteger = 2
 

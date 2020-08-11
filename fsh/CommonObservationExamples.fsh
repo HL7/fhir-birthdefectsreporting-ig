@@ -27,7 +27,7 @@ Usage:              #example
 * id = "LaborOnsetExample"
 * status = #final
 * code = LN#73774-2 "Onset of labor [US Standard Certificate of Live Birth]"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * valueCodeableConcept = SCT#51920004 "Precipitate labor"
 
 
@@ -38,7 +38,7 @@ Usage:              #example
 * id = "BirthsNowLivingExample"
 * status = #final
 * code = LN#11638-4 "[#] Births.still living"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * valueInteger = 1
 
 
@@ -49,7 +49,7 @@ Usage:              #example
 * id = "BirthsNowDeadExample"
 * status = #final
 * code = LN#68496-9 "Previous live births now dead #"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * valueInteger = 0
 
 
@@ -60,7 +60,7 @@ Usage:              #example
 * id = "GestationalAgeExample"
 * status = #final
 * code = LN#11884-4 "Gestational age Estimated"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * valueQuantity.value = 39
 * valueQuantity.code = #wk
 * valueQuantity.system = "http://unitsofmeasure.org"
@@ -74,7 +74,7 @@ Usage:              #example
 * id = "FetalDeathsExample"
 * status = #final
 * code = LN#73772-6 "Number of fetal deaths delivered"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * valueInteger = 1
 
 
@@ -98,7 +98,7 @@ Usage:              #example
 * id = "MotherDeliveryWeightExample"
 * status = #final
 * code = LN#69461-2 "Mother's body weight --at delivery"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * effectiveDateTime = 2020-04-28
 * valueQuantity.value = 73
 * valueQuantity.code = #kg
@@ -112,7 +112,7 @@ Usage:              #example
 * id = "LMPExample"
 * status = #final
 * code = LN#8665-2 "Last menstrual period start date"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * valueDateTime = 2019-07-15
 
 
@@ -123,7 +123,7 @@ Usage:              #example
 * id = "MotherPrepregnancyWeightExample"
 * status = #final
 * code = LN#56077-1 "Body weight --pre current pregnancy"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * effectiveDateTime = 2019-07-31
 * valueQuantity.value = 57
 * valueQuantity.code = #kg
@@ -137,7 +137,7 @@ Usage:              #example
 * id = "LiveBirthsThisPregnancyExample"
 * status = #final
 * code = LN#73773-4 "Number of infants in this delivery delivered alive"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * valueInteger = 1
 
 
@@ -149,7 +149,7 @@ Usage:              #example
 * id = "MotherHeightExample"
 * status = #final
 * code = LN#3137-7 "Body height Measured"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * effectiveDateTime = 2020-04-28
 * valueQuantity.value = 160
 * valueQuantity.code = #cm
@@ -163,7 +163,7 @@ Usage:              #example
 * id = "PrenatalVisitsExample"
 * status = #final
 * code = LN#68493-6 "Prenatal visits for this pregnancy #"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * effectivePeriod.start = 2019-08-01
 * effectivePeriod.end = 2020-04-20
 * valueInteger = 18
@@ -188,7 +188,7 @@ Usage:              #example
 * id = "PluralityExample"
 * status = #final
 * code = LN#57722-1 "Birth plurality of Pregnancy"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * valueInteger = 2
 
 
@@ -199,7 +199,7 @@ Usage:              #example
 * id = "OtherOutcomesExample"
 * status = #final
 * code = LN#69043-8 "Other pregnancy outcomes #"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * valueInteger = 1
 
 
@@ -210,5 +210,5 @@ Usage:              #example
 * id = "PreviousCesareansExample"
 * status = #final
 * code = LN#68497-7 "Previous cesarean deliveries #"
-* subject = Reference(BDRMotherPatientExample)
+* subject = Reference(MotherPatientExample)
 * valueInteger = 0
