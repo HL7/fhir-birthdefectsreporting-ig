@@ -2,7 +2,7 @@ Alias:			PHDSC = urn:oid:2.16.840.1.113883.3.221.5
 
 Instance:          BDRMotherPatientExample
 InstanceOf:        PatientMother
-Description:       "Example BDR Mother as a Patient"
+Description:       "Example Mother as a Patient"
 Usage:             #example
 * id = "BDRMotherPatientExample"
 * extension[http://hl7.org/fhir/us/core/StructureDefinition/us-core-race].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
@@ -15,19 +15,19 @@ Usage:             #example
 * identifier[1].value = "111223333"
 * identifier[1].type = http://terminology.hl7.org/CodeSystem/v2-0203#SB
 * identifier[1].system = "http://hl7.org/fhir/sid/us-ssn"
-* name.family = "Wellington"
-* name.given[0] = "Sara"
-* name.given[1] = "Leah"
+* name.family = "Boucher"
+* name.given[0] = "Miranda"
+* name.given[1] = "Stephanie"
 * name.use = #official
 * gender = #female "Female"
-* birthDate = "1991-10-19"
+* birthDate = "1988-02-17"
 * deceasedBoolean = false
 * multipleBirthBoolean = false
-* address.line = "425 East 66th St"
+* address.line = "45 Clearview Ave"
 * address.city = "Ann Arbor"
 * address.state = "MI"
 * address.postalCode = "48105"
-* link.other = Reference(MotherRelatedPersonExample)
+* link.other = Reference(MotherRelatedPersonBirthingExample)
 * link.type = #seealso
 
 
@@ -39,7 +39,7 @@ Usage:             #example
 //* id = "TN007"
 //* status = #final
 //* code = LN#xxxx ""
-//* subject = Reference(PatientChildExample)
+//* subject = Reference(PatientNewbornExample)
 //* value[x] = 
 
 
@@ -50,7 +50,7 @@ Usage:              #example
 * id = "PregnancyOutcomeExample"
 * status = #final
 * code = LN#64710-7 "Was your pregnancy a live birth, stillbirth, miscarriage, abortion, or ectopic pregnancy [PhenX]"
-* subject = Reference(PatientChildExample)
+* subject = Reference(PatientNewbornExample)
 * valueCodeableConcept = SCT#281050002 "Livebirth" 
 
 
@@ -61,8 +61,8 @@ Usage:              #example
 * id = "AdmissionToNicuExample"
 * status = #final
 * code = SCT#305351004 "Admission to intensive care unit"
-* subject = Reference(PatientChildExample)
-* valueBoolean = true 
+* subject = Reference(PatientNewbornExample)
+* valueBoolean = false 
 
 
 Instance:           BirthHeadCircumferenceExample
@@ -72,7 +72,7 @@ Usage:              #example
 * id = "BirthHeadCircumferenceExample"
 * status = #final
 * code = LN#8290-9 "Head Occipital-frontal circumference --at birth- by Tape measure"
-* subject = Reference(PatientChildExample)
+* subject = Reference(PatientNewbornExample)
 * valueQuantity.value = 37
 * valueQuantity.code = #cm
 * valueQuantity.system = "http://unitsofmeasure.org"
@@ -85,7 +85,7 @@ Usage:              #example
 * id = "BirthHeightExample"
 * status = #final
 * code = LN#8305-5 "Body height --post partum"
-* subject = Reference(PatientChildExample)
+* subject = Reference(PatientNewbornExample)
 * valueQuantity.value = 37
 * valueQuantity.code = #cm
 * valueQuantity.system = "http://unitsofmeasure.org"

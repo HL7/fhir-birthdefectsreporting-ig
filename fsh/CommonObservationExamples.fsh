@@ -5,7 +5,7 @@ Usage:              #example
 * id = "ApgarFiveMinuteExample"
 * status = #final
 * code = LN#9274-2 "5 minute Apgar Score"
-* subject = Reference(PatientChildExample)
+* subject = Reference(PatientNewbornExample)
 * valueInteger = 7
 
 
@@ -16,7 +16,7 @@ Usage:              #example
 * id = "ApgarTenMinuteExample"
 * status = #final
 * code = LN#9271-8 "10 minute Apgar Score"
-* subject = Reference(PatientChildExample)
+* subject = Reference(PatientNewbornExample)
 * valueInteger = 10
 
 
@@ -85,7 +85,7 @@ Usage:              #example
 * id = "BirthWeightExample"
 * status = #final
 * code = LN#8339-4 "Birth weight Measured"
-* subject = Reference(PatientChildExample)
+* subject = Reference(PatientNewbornExample)
 * valueQuantity.value = 3200
 * valueQuantity.code = #g
 * valueQuantity.system = "http://unitsofmeasure.org"
@@ -177,7 +177,7 @@ Usage:              #example
 * id = "PlaceOfBirthExample"
 * status = #final
 * code = LN#73766-8 "Place where birth occurred [US Standard Certificate of Live Birth]"
-* subject = Reference(PatientChildExample)
+* subject = Reference(PatientNewbornExample)
 * valueCodeableConcept = SCT#22232009 "Hospital"
 
 

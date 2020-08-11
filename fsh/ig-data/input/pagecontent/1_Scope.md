@@ -18,7 +18,7 @@ Individual data elements can be mapped to specific resource profiles defined by 
 ![Birth Defect Report Data Content Mapping](profilemappings.png)
 
 # Related Documents
-HL7 has previous published a [CDA Implementation Guide for birth defect reporting] (http://www.hl7.org/implement/standards/product_brief.cfm?product_id=428). While the content of this document varies slightly from the CDA IG, the core data content of both documents is described in the HL7 Vital Records Domain Analysis Model (DAM).
+HL7 has previous published a [CDA Implementation Guide for birth defect reporting](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=428). While the content of this document varies slightly from the CDA IG, the core data content of both documents is described in the HL7 Vital Records Domain Analysis Model (DAM).
 
 Many of the data elements described in this document overlap with elements critical to birth and fetal death reporting as described in the BAFD FHIR IG <add link>. The project teams for both Birth Defect Reporting and Birth and Fetal Death Reporting have coordinated activities to ensure reusable profiles have been used where possible resulting in the development of the Vital Records Common Profiles Library FHIR IG <add link>. Many of the profiles used by this implementation guide originate in the common profile library.
 

@@ -6,22 +6,22 @@ Usage: 			#example
 * eventCoding = LN#75609-8 "Birth defects Outpatient Registry report"
 * destination.name = "Michigan BDRS"
 * destination.endpoint = "http://acme.com"
-* sender = Reference(BDRSubmittterExample)
+* sender = Reference(ClinicSubmittterExample)
 * source.name = "EHR"
 * source.endpoint = "http://acme.com"
 * focus = Reference(ReportableDiagnosisExample)
 
 
-Instance:		BDRSubmittterExample
+Instance:		ClinicSubmittterExample
 InstanceOf: 	BDROrganization
-Description: 	"Example BDR Submitter Organization"
+Description: 	"Example Clinic Submitter Organization"
 Usage: 			#example
-* id = "BDRSubmittterExample"
+* id = "ClinicSubmittterExample"
 * identifier[0].value = "8893223"
 * identifier[0].type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
 * identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
 * active = true
-* name = "Westside Hospital"
+* name = "Westside Clinic"
 * telecom.value = "734-555-0001"
 * telecom.system = #phone "Phone"
 * address.line = "67 Main Steet"
@@ -91,7 +91,7 @@ Usage: 			#example
 * telecom.value = "734-555-9087"
 * telecom.system = #phone "Phone"
 * telecom.use = #mobile "Mobile"
-* gender = #female "Female"
+* gender = #male "Male"
 * birthDate = "1992-03-17"
 * address.line = "425 East 66th St"
 * address.city = "Ann Arbor"
@@ -100,47 +100,15 @@ Usage: 			#example
 * communication.language = urn:ietf:bcp:47#en "English"
 
 
-Instance:		ResponsiblePartyExample
-InstanceOf: 	BDRRelatedPersonResponsibleParty
-Description: 	"Example Responsible Party"
-Usage: 			#example
-* id = "ResponsiblePartyExample"
-* patient = Reference(PatientChildExample)
-* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#GRMTH "Grandmother"
-* name.family = "Moore"
-* name.given = "Helen"
-* telecom.value = "734-555-7810"
-* telecom.system = #phone "Phone"
-* telecom.use = #mobile "Mobile"
-* gender = #female "Female"
-* birthDate = "1958-09-01"
-* address.line = "1889 West Elm St"
-* address.city = "Ann Arbor"
-* address.state = "MI"
-* address.postalCode = "48105"
-* communication.language = urn:ietf:bcp:47#en "English"
-
-
-Instance:		NewbornProcedureExample
-InstanceOf: 	BDRNewbornProcedure
-Description: 	"Example Procedure Performed on the Newborn"
-Usage: 			#example
-* id = "NewbornProcedureExample"
-* status = #completed
-* code = SCT#312948004 "Karyotype determination"
-* subject = Reference(PatientChildExample)
-* performedDateTime = "2020-07-07"
-
-
-Instance:		ConfirmatoryTestExample
+Instance:		ConfirmatoryTestExampleWES
 InstanceOf: 	BDRConfirmatoryTest
 Description: 	"Example Confirmatory Test for Reportable Diagnosis"
 Usage: 			#example
-* id = "ConfirmatoryTestExample"
+* id = "ConfirmatoryTestExampleWES"
 * status = #completed
 * code = http://www.ama-assn.org/go/cpt#81415 "Whole exome sequencing"
 * subject = Reference(PatientChildExample)
-* performedDateTime = "2020-07-14"
+* performedDateTime = "2020-07-11"
 
 
 Instance:		ReportableDiagnosisExample
@@ -153,7 +121,7 @@ Usage: 			#example
 * code = SCT#719046005 "12q14 microdeletion syndrome (disorder)"
 * subject = Reference(PatientChildExample)
 * onsetDateTime = "2020-07-15"
-* evidence.detail = Reference(ConfirmatoryTestExample)
+* evidence.detail = Reference(ConfirmatoryTestExampleWES)
 
 
 Instance:		MotherEducationExample
@@ -201,39 +169,3 @@ Usage: 			#example
 * subject = Reference(PatientChildExample)
 * focus = Reference(MotherRelatedPersonExample)
 * valueString = "No alcohol use during pregnancy"
-
-
-Instance:		MotherExposureExample
-InstanceOf: 	ObservationMotherExposure
-Description: 	"Example Observation of the Mother's Exposures During Pregnancy"
-Usage: 			#example
-* id = "MotherExposureExample"
-* status = #final
-* code = LN#89496-4 "Maternal Known exposure --during pregnancy"
-* subject = Reference(PatientChildExample)
-* focus = Reference(MotherRelatedPersonExample)
-* valueCodeableConcept = SCT#242383002 "Accidental exposure to carbon monoxide"
-
-
-Instance:		MotherRiskFactorExample
-InstanceOf: 	ObservationPregnancyRiskFactor
-Description: 	"Example Observation of the Mother's Risk Factor During Pregnancy"
-Usage: 			#example
-* id = "MotherRiskFactorExample"
-* status = #final
-* code = LN#73775-9 "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
-* subject = Reference(PatientChildExample)
-* focus = Reference(MotherRelatedPersonExample)
-* valueCodeableConcept = SCT#161765003 "History of preterm delivery"
-
-
-Instance:		MotherDrugUseExample
-InstanceOf: 	ObservationMotherDrugUse
-Description: 	"Example Observation of the Mother's Drug Use During Pregnancy"
-Usage: 			#example
-* id = "MotherDrugUseExample"
-* status = #final
-* code = LN#89495-6 "Drug use by Mother --during pregnancy"
-* subject = Reference(PatientChildExample)
-* focus = Reference(MotherRelatedPersonExample)
-* valueCodeableConcept = http://fdasis.nlm.nih.gov#QVU94XE61A "3-METHYLFENTANYL"
