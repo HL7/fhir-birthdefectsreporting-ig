@@ -7,6 +7,6 @@
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "The code \"QVU94XE61A\" is not valid in the system http://fdasis.nlm.nih.gov; The code provided (http://fdasis.nlm.nih.gov#QVU94XE61A) is not  valid in the value set All codes known to the system"
+  "error" : "The code \"QVU94XE61A\" is not valid in the system http://fdasis.nlm.nih.gov; The code provided (http://fdasis.nlm.nih.gov#QVU94XE61A) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------

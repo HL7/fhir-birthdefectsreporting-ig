@@ -1,8 +1,8 @@
-Instance:		BDRMessageHeaderExampleStillborn
+Instance:		BDRMessageHeaderStillbornExample
 InstanceOf: 	BDRMessageHeader
 Description: 	"Example BDR Stillborn Message Header"
 Usage: 			#example
-* id = "BDRMessageHeaderExampleStillborn"
+* id = "BDRMessageHeaderStillbornExample"
 * eventCoding = LN#85580-9 "Birth defects Hospital Registry report"
 * destination.name = "Michigan BDRS"
 * destination.endpoint = "http://acme.com"
