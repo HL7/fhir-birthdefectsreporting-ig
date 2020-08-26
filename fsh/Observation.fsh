@@ -13,7 +13,7 @@ Description:	"Serious complications experienced by the mother associated with la
 * subject 1..1
 * value[x] only CodeableConcept
 * value[x] 1..1
-* value[x] from https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7123 (required)
+* value[x] from http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7123 (required)
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
 
 
@@ -27,7 +27,7 @@ Description:	"The cause of death of the birth defect report subject."
 * subject 1..1
 * value[x] only CodeableConcept
 * value[x] 1..1
-* value[x] from https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3593 (extensible)
+* value[x] from http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3593 (extensible)
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
 
 
@@ -56,7 +56,7 @@ Description:	"The result of the subject's delivery, such as live birth or not a 
 * subject 1..1
 * value[x] only CodeableConcept
 * value[x] 1..1
-* value[x] from https://phinvads.cdc.gov/vads/ViewValueSet.action?id=30D44BBC-617F-DD11-B38D-00188B398520 (required)
+* value[x] from http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3123 (required)
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
 
 
@@ -127,7 +127,7 @@ Description:	"An observation regarding maternal recreational drug use during pre
 * focus 1..1
 * value[x] only CodeableConcept
 * value[x] 1..1
-* value[x] from https://phinvads.cdc.gov/vads/ViewValueSet.action?id=07AE5520-13E9-4249-8F3C-23C8E14D6298 (extensible)
+* value[x] from http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.14.1.1.13.9 (extensible)
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
 
 
@@ -143,7 +143,7 @@ Description:	"The exposure of the mother to potentially harmful chemical, physic
 * focus 1..1
 * value[x] only CodeableConcept
 * value[x] 1..1
-* value[x] from https://phinvads.cdc.gov/vads/ViewValueSet.action?id=39D91E87-2C93-E711-A03D-0017A477041A (extensible)
+* value[x] from http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.14.1.1.13.4 (extensible)
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
 
 
@@ -157,7 +157,7 @@ Description:	"The primary insurance type for the delivery."
 * subject 1..1
 * value[x] only CodeableConcept
 * value[x] 1..1
-* value[x] from https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7163 (extensible)
+* value[x] from http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7163 (extensible)
 * ^jurisdiction.coding = COUNTRY#US "United States of America"
 
 
