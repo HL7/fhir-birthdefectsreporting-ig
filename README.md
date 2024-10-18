@@ -1,2 +1,2 @@
 # fhir-birthdefectsreporting-ig
-updated Jan 2023
+updated July 2024
