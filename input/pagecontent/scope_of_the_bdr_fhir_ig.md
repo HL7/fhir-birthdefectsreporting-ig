@@ -14,15 +14,9 @@ The scope of this document is centered on the reporting of a birth defect diagno
 
 ![Birth Defect Report Data Content](BDRcorecontent.png)
 
-Individual data elements can be mapped to specific resource profiles defined by this and other implementation guides. See Mapping snapshot & table below (May NOT needed if include the mapping xcel):
-![Birth Defect Report Data Mapping](profilemappings.png)
+Individual data elements can be mapped to specific resource profiles defined by this and other implementation guides. See table below for details:
 
 * [Birth Defect Report Data Content Mapping](BirthDefectsReportingIG_GapAnalysis.csv)
-
-# Related Documents
-HL7 has previous published a [CDA Implementation Guide for birth defect reporting](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=428). While the content of this document varies slightly from the CDA IG, the core data content of both documents is described in the HL7 Vital Records Domain Analysis Model (DAM).
-
-Many of the data elements described in this document overlap with elements critical to birth and fetal death reporting as described in the BAFD FHIR IG <add link>. The project teams for both Birth Defect Reporting and Birth and Fetal Death Reporting have coordinated activities to ensure reusable profiles have been used where possible resulting in the development of the Vital Records Common Profiles Library FHIR IG <add link>. Many of the profiles used by this implementation guide originate in the common profile library.
 
 # Patient Scope
 In many jurisdictions, the scope of birth defect reporting focuses on subject under the age of 24 months. Jurisdictional requirements may extend the scope to include older subjects (e.g. those under 12 years of age) if the birth defect is not diagnosed at an earlier age. Typically however, reporting  does not extend to adult subjects. 

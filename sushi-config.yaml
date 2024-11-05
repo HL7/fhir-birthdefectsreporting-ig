@@ -103,7 +103,7 @@ parameters:
 menu:
   Home: index.html
   Credits: credits.html
-  Background: background.html
+  #Background: background.html
   Scope: scope_of_the_bdr_fhir_ig.html
   Usage: usage.html
   Conformance: conformance.html
@@ -114,8 +114,8 @@ pages:
     title: Home
   credits.md:
     title: Credits
-  background.md:
-    title: Background
+  #background.md:
+  #  title: Background
   scope_of_the_bdr_fhir_ig.md:
     title: Scope of the BDR IG
   usage.md:
