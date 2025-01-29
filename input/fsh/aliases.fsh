@@ -12,3 +12,6 @@ Alias: $v2-0074 =  http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $referencerange-meaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning
+Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487
+Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode

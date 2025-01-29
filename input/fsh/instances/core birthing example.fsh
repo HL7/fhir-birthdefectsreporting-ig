@@ -6,16 +6,16 @@ Usage: 			#example
 * eventCoding = $loinc#85580-9 "Birth defects Hospital Registry report"
 * destination.name = "Michigan BDRS"
 * destination.endpoint = "http://acme.com"
-* sender = Reference(HospitalSubmittterExample)
+* sender = Reference(HospitalSubmitterExample)
 * source.name = "EHR"
 * source.endpoint = "http://acme.com"
 * focus = Reference(ReportableDiagnosisBirthingExample)
 
-Instance:		HospitalSubmittterExample
+Instance:		HospitalSubmitterExample
 InstanceOf: 	BDROrganization
 Description: 	"Example Hospital Submitter Organization"
 Usage: 			#example
-* id = "HospitalSubmittterExample"
+* id = "HospitalSubmitterExample"
 * identifier[0].value = "1993999998"
 * identifier[0].type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN
 * identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
@@ -58,7 +58,6 @@ Usage: 			#example
 * address.city = "Ann Arbor"
 * address.state = "MI"
 * address.postalCode = "48105"
-
 
 Instance:		MotherRelatedPersonBirthingExample
 InstanceOf: 	RelatedPersonMotherVitalRecords
