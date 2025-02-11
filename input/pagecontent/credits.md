@@ -2,20 +2,18 @@
 
 #### FHIR Specification Developers
 * [Thanh Cheng](mailto:Thanh.Cheng@altarum.org), Senior Standards Development Specialist, Altarum
-* [Craig Newman], Principal, Interoperability and Standards Manager, Altarum
 
 #### Project Facilitators
 * [Thanh Cheng](mailto:Thanh.Cheng@altarum.org), Senior Standards Development Specialist, Altarum
-* [Craig Newman], Principal, Interoperability and Standards Manager, Altarum
-* [Michael Yaskanin], Senior Product Manager, Altarum
+* [Michael Yaskanin](mailto:Michael.Yaskanin@altarum.org), Senior Product Manager, Altarum
 
 #### Business Requirements Analysts/Modeling facilitators
 * [Thanh Cheng](mailto:Thanh.Cheng@altarum.org), Senior Standards Development Specialist, Altarum
 
 #### Other contributors
-* [Kevin Perdue], Senior Health IT Business Analyst, Altarum
-* [William Benson], Senior Software Engineer and SME, Altarum
-* [Lauren Rodriguez-Yanes], Senior Interoperability Analyst, Altarum
+* [Kevin Perdue](mailto:Kevin.Perdue@altarum.org), Senior Health IT Business Analyst, Altarum
+* [William Benson](mailto:William.Benson@altarum.org), Senior Software Engineer and SME, Altarum
+* [Lauren Rodriguez-Yanes](mailto:Lauren.Rodriguez-Yanes@altarum.org), Senior Interoperability Analyst, Altarum
 
 ### Acknowledgements
 
