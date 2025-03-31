@@ -16,7 +16,7 @@ Many of the data elements described in this document overlap with elements criti
 ### Dependencies
 
 This implementation guide re-uses and further constrains profiles from the following guides:
-* [US Core Implementation Guide, STU5.0.1](http://hl7.org/fhir/us/core/STU5.0.1/)
+* [US Core Implementation Guide, STU5.0.1](http://hl7.org/fhir/us/core/STU7)
 * [Vital Records Common Library](http://hl7.org/fhir/us/vr-common-library)
 * [Birth And Fetal Death (BFDR) FHIR Implementation Guide](http://hl7.org/fhir/us/bfdr)
 

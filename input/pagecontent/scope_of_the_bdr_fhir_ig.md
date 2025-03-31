@@ -12,6 +12,8 @@ The scope of this document is centered on the reporting of a birth defect diagno
 * Other relevant clinical data about report subject
 * following contents - to be updated
 
+Note: The current model for submitting a Birth Defects report is one BD report per encounter (where the encounter deals with a reportable BD)
+
 ![Birth Defect Report Data Content](BDRcorecontent.png)
 
 Individual data elements can be mapped to specific resource profiles defined by this and other implementation guides. See table below for details:
