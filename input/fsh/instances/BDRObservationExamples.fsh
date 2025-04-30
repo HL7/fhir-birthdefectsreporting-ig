@@ -44,16 +44,17 @@ Usage:              #example
 * effectiveDateTime = "2019-12-02"
 
 Instance:           AdmissionToNicuExample
-InstanceOf:         ObservationAdmissionToNICU
+//InstanceOf:         ObservationAdmissionToNICU
+InstanceOf:         ObservationNICUAdmission
 Description:        "Example Observation of a Patient Admission to the NICU"
 Usage:              #example
 * id = "AdmissionToNicuExample"
 * status = #final
-* code = $sct#305351004 "Admission to intensive care unit"
+//* code = $sct#305351004 "Admission to intensive care unit"
 * subject = Reference(PatientNewbornExample)
 * performer = Reference(practitioner-joe-smith)
 * effectiveDateTime = "2019-12-02"
-* valueBoolean = false 
+//* valueBoolean = false 
 
 Instance:           HeadCircumferenceExample
 //Instance:           BirthHeadCircumferenceExample
