@@ -1,14 +1,14 @@
 ### Project Team
 
 #### FHIR Specification Developers
-* [Thanh Cheng](mailto:Thanh.Cheng@altarum.org), Senior Standards Development Specialist, Altarum
+* [Thanh Cheng](https://www.linkedin.com/in/thanhchengnj), Senior Standards Development Specialist, Altarum
 
 #### Project Facilitators
-* [Thanh Cheng](mailto:Thanh.Cheng@altarum.org), Senior Standards Development Specialist, Altarum
+* [Thanh Cheng](https://www.linkedin.com/in/thanhchengnj), Senior Standards Development Specialist, Altarum
 * [Michael Yaskanin](mailto:Michael.Yaskanin@altarum.org), Senior Product Manager, Altarum
 
 #### Business Requirements Analysts/Modeling facilitators
-* [Thanh Cheng](mailto:Thanh.Cheng@altarum.org), Senior Standards Development Specialist, Altarum
+* [Thanh Cheng](https://www.linkedin.com/in/thanhchengnj), Senior Standards Development Specialist, Altarum
 
 #### Other contributors
 * [Kevin Perdue](mailto:Kevin.Perdue@altarum.org), Senior Health IT Business Analyst, Altarum
